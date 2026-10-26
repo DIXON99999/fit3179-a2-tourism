@@ -1,0 +1,121 @@
+region,state,year,gva_m,index
+Sydney,New South Wales,2018-19,9399.5,100.0
+Sydney,New South Wales,2019-20,7344.3,78.1
+Sydney,New South Wales,2020-21,3284.6,34.9
+Sydney,New South Wales,2021-22,4149.9,44.2
+Sydney,New South Wales,2022-23,9715.3,103.4
+Sydney,New South Wales,2023-24,11628.5,123.7
+Melbourne,Victoria,2018-19,8227.9,100.0
+Melbourne,Victoria,2019-20,6577.7,79.9
+Melbourne,Victoria,2020-21,2221.9,27.0
+Melbourne,Victoria,2021-22,3614.1,43.9
+Melbourne,Victoria,2022-23,8077.5,98.2
+Melbourne,Victoria,2023-24,9589.1,116.5
+Brisbane,Queensland,2018-19,4299.6,100.0
+Brisbane,Queensland,2019-20,3552.1,82.6
+Brisbane,Queensland,2020-21,1959.7,45.6
+Brisbane,Queensland,2021-22,2516.2,58.5
+Brisbane,Queensland,2022-23,4959.8,115.4
+Brisbane,Queensland,2023-24,5633.3,131.0
+Destination Perth,Western Australia,2018-19,2917.3,100.0
+Destination Perth,Western Australia,2019-20,2450.8,84.0
+Destination Perth,Western Australia,2020-21,1341.2,46.0
+Destination Perth,Western Australia,2021-22,1633.5,56.0
+Destination Perth,Western Australia,2022-23,3415.1,117.1
+Destination Perth,Western Australia,2023-24,3687.7,126.4
+Gold Coast,Queensland,2018-19,2360.2,100.0
+Gold Coast,Queensland,2019-20,1770.0,75.0
+Gold Coast,Queensland,2020-21,1262.7,53.5
+Gold Coast,Queensland,2021-22,1556.2,65.9
+Gold Coast,Queensland,2022-23,2934.4,124.3
+Gold Coast,Queensland,2023-24,3078.8,130.4
+Adelaide,South Australia,2018-19,2019.3,100.0
+Adelaide,South Australia,2019-20,1711.1,84.7
+Adelaide,South Australia,2020-21,1074.2,53.2
+Adelaide,South Australia,2021-22,1203.8,59.6
+Adelaide,South Australia,2022-23,2374.7,117.6
+Adelaide,South Australia,2023-24,2552.7,126.4
+North Coast NSW,New South Wales,2018-19,1554.5,100.0
+North Coast NSW,New South Wales,2019-20,1341.8,86.3
+North Coast NSW,New South Wales,2020-21,1359.7,87.5
+North Coast NSW,New South Wales,2021-22,1048.0,67.4
+North Coast NSW,New South Wales,2022-23,1953.4,125.7
+North Coast NSW,New South Wales,2023-24,2001.2,128.7
+Tropical North Queensland,Queensland,2018-19,1385.1,100.0
+Tropical North Queensland,Queensland,2019-20,1166.9,84.2
+Tropical North Queensland,Queensland,2020-21,740.4,53.5
+Tropical North Queensland,Queensland,2021-22,1065.2,76.9
+Tropical North Queensland,Queensland,2022-23,1878.1,135.6
+Tropical North Queensland,Queensland,2023-24,1889.9,136.4
+Hunter,New South Wales,2018-19,1069.7,100.0
+Hunter,New South Wales,2019-20,853.3,79.8
+Hunter,New South Wales,2020-21,808.0,75.5
+Hunter,New South Wales,2021-22,698.9,65.3
+Hunter,New South Wales,2022-23,1382.5,129.2
+Hunter,New South Wales,2023-24,1533.3,143.3
+Canberra,Australian Capital Territory,2018-19,1056.5,100.0
+Canberra,Australian Capital Territory,2019-20,769.7,72.9
+Canberra,Australian Capital Territory,2020-21,479.7,45.4
+Canberra,Australian Capital Territory,2021-22,585.7,55.4
+Canberra,Australian Capital Territory,2022-23,1257.3,119.0
+Canberra,Australian Capital Territory,2023-24,1341.2,126.9
+South Coast,New South Wales,2018-19,1054.9,100.0
+South Coast,New South Wales,2019-20,873.1,82.8
+South Coast,New South Wales,2020-21,834.5,79.1
+South Coast,New South Wales,2021-22,780.3,74.0
+South Coast,New South Wales,2022-23,1402.3,132.9
+South Coast,New South Wales,2023-24,1492.3,141.5
+Sunshine Coast,Queensland,2018-19,996.9,100.0
+Sunshine Coast,Queensland,2019-20,798.0,80.1
+Sunshine Coast,Queensland,2020-21,795.7,79.8
+Sunshine Coast,Queensland,2021-22,902.6,90.5
+Sunshine Coast,Queensland,2022-23,1516.3,152.1
+Sunshine Coast,Queensland,2023-24,1375.4,138.0
+Australia's South West,Western Australia,2018-19,957.8,100.0
+Australia's South West,Western Australia,2019-20,813.2,84.9
+Australia's South West,Western Australia,2020-21,790.3,82.5
+Australia's South West,Western Australia,2021-22,890.6,93.0
+Australia's South West,Western Australia,2022-23,1243.2,129.8
+Australia's South West,Western Australia,2023-24,1328.4,138.7
+Hobart and the South,Tasmania,2018-19,818.6,100.0
+Hobart and the South,Tasmania,2019-20,685.6,83.7
+Hobart and the South,Tasmania,2020-21,450.9,55.1
+Hobart and the South,Tasmania,2021-22,581.1,71.0
+Hobart and the South,Tasmania,2022-23,877.0,107.1
+Hobart and the South,Tasmania,2023-24,1044.6,127.6
+Australia's North West,Western Australia,2018-19,603.4,100.0
+Australia's North West,Western Australia,2019-20,584.8,96.9
+Australia's North West,Western Australia,2020-21,319.7,53.0
+Australia's North West,Western Australia,2021-22,397.4,65.9
+Australia's North West,Western Australia,2022-23,699.4,115.9
+Australia's North West,Western Australia,2023-24,716.3,118.7
+High Country,Victoria,2018-19,540.4,100.0
+High Country,Victoria,2019-20,366.7,67.9
+High Country,Victoria,2020-21,227.8,42.2
+High Country,Victoria,2021-22,360.8,66.8
+High Country,Victoria,2022-23,740.4,137.0
+High Country,Victoria,2023-24,719.1,133.1
+Central NSW,New South Wales,2018-19,518.3,100.0
+Central NSW,New South Wales,2019-20,402.3,77.6
+Central NSW,New South Wales,2020-21,449.7,86.8
+Central NSW,New South Wales,2021-22,369.3,71.3
+Central NSW,New South Wales,2022-23,649.9,125.4
+Central NSW,New South Wales,2023-24,714.7,137.9
+Peninsula,Victoria,2018-19,490.7,100.0
+Peninsula,Victoria,2019-20,390.7,79.6
+Peninsula,Victoria,2020-21,255.0,52.0
+Peninsula,Victoria,2021-22,330.1,67.3
+Peninsula,Victoria,2022-23,603.1,122.9
+Peninsula,Victoria,2023-24,672.0,137.0
+Great Ocean Road,Victoria,2018-19,486.8,100.0
+Great Ocean Road,Victoria,2019-20,415.5,85.4
+Great Ocean Road,Victoria,2020-21,291.0,59.8
+Great Ocean Road,Victoria,2021-22,387.6,79.6
+Great Ocean Road,Victoria,2022-23,608.8,125.1
+Great Ocean Road,Victoria,2023-24,664.8,136.6
+Darwin,Northern Territory,2018-19,458.9,100.0
+Darwin,Northern Territory,2019-20,337.3,73.5
+Darwin,Northern Territory,2020-21,238.8,52.0
+Darwin,Northern Territory,2021-22,391.9,85.4
+Darwin,Northern Territory,2022-23,660.9,144.0
+Darwin,Northern Territory,2023-24,634.4,138.2

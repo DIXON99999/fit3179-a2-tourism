@@ -1,0 +1,160 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 560,
+  "height": 340,
+  "title": {
+    "text": "NSW leads international spend every year; the bottom of the table keeps reshuffling",
+    "subtitle": "Each state's rank for spend by international visitors (1 = highest)",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/state_trends_2018_19_to_2024_25.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "value": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.measure == 'consumption_international' && datum.state != 'Australia'"
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "groupby": [
+        "year"
+      ],
+      "sort": [
+        {
+          "field": "value",
+          "order": "descending"
+        }
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0
+      },
+      "scale": {
+        "padding": 0.3
+      }
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          8.5,
+          0.5
+        ]
+      },
+      "axis": {
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "title": "Rank",
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "Western Australia",
+          "South Australia",
+          "Tasmania",
+          "Australian Capital Territory",
+          "Northern Territory"
+        ],
+        "range": [
+          "#0072B2",
+          "#D55E00",
+          "#009E73",
+          "#CC79A7",
+          "#E69F00",
+          "#56B4E9",
+          "#7a7a7a",
+          "#a6761d"
+        ]
+      },
+      "legend": {
+        "title": "State",
+        "orient": "right"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 3,
+        "opacity": 0.9
+      },
+      "encoding": {
+        "detail": {
+          "field": "state",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "opacity": 1,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "rank",
+            "title": "Rank"
+          },
+          {
+            "field": "value",
+            "title": "Spend ($ million)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

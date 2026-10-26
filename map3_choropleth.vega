@@ -1,0 +1,280 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 600,
+  "height": 460,
+  "title": {
+    "text": "Small, remote and island regions get the most tourist money per resident",
+    "subtitle": "Tourist spend in 2024-25 divided by the number of people living in each region",
+    "anchor": "start",
+    "offset": 12
+  },
+  "projection": {
+    "type": "conicEqualArea",
+    "rotate": [
+      -132,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ],
+    "parallels": [
+      -18,
+      -36
+    ],
+    "scale": 780,
+    "translate": [
+      300,
+      215
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/tourism_regions.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "Tourism_Regions_2021"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.tr_name",
+          "from": {
+            "data": {
+              "url": "data/regions_2024_25.csv",
+              "format": {
+                "type": "csv",
+                "parse": {
+                  "population_2025": "number",
+                  "consumption_m": "number",
+                  "gva_direct_m": "number",
+                  "gva_total_m": "number",
+                  "jobs_direct_thousands": "number",
+                  "spend_per_resident": "number",
+                  "jobs_per_1000_residents": "number",
+                  "lat": "number",
+                  "lon": "number"
+                }
+              }
+            },
+            "key": "region",
+            "fields": [
+              "state",
+              "population_2025",
+              "consumption_m",
+              "spend_per_resident"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.4
+      },
+      "encoding": {
+        "color": {
+          "field": "spend_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [
+              4000,
+              6000,
+              8000,
+              12000,
+              20000
+            ],
+            "range": [
+              "#fee8c8",
+              "#fdd49e",
+              "#fdbb84",
+              "#e34a33",
+              "#b30000",
+              "#7f0000"
+            ]
+          },
+          "legend": {
+            "title": "$ per resident",
+            "format": "$,.0f",
+            "orient": "top-left"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.tr_name",
+            "title": "Region"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "spend_per_resident",
+            "title": "Spend per resident",
+            "format": "$,.0f"
+          },
+          {
+            "field": "consumption_m",
+            "title": "Total spend ($m)",
+            "format": ",.0f"
+          },
+          {
+            "field": "population_2025",
+            "title": "Population",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/regions_2024_25.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "population_2025": "number",
+            "consumption_m": "number",
+            "gva_direct_m": "number",
+            "gva_total_m": "number",
+            "jobs_direct_thousands": "number",
+            "spend_per_resident": "number",
+            "jobs_per_1000_residents": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.region == 'Whitsundays' || datum.region == 'Kangaroo Island'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -12,
+        "dy": 0,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#222"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/regions_2024_25.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "population_2025": "number",
+            "consumption_m": "number",
+            "gva_direct_m": "number",
+            "gva_total_m": "number",
+            "jobs_direct_thousands": "number",
+            "spend_per_resident": "number",
+            "jobs_per_1000_residents": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.region == 'East Coast'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "dy": 6,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#222"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/regions_2024_25.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "population_2025": "number",
+            "consumption_m": "number",
+            "gva_direct_m": "number",
+            "gva_total_m": "number",
+            "jobs_direct_thousands": "number",
+            "spend_per_resident": "number",
+            "jobs_per_1000_residents": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.region == 'Lasseter'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "dx": 0,
+        "dy": 22,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#222"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

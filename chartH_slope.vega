@@ -1,0 +1,248 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 420,
+  "height": 420,
+  "title": {
+    "text": "Every state now earns more from tourists than before COVID",
+    "subtitle": "Total tourist spend, 2018-19 vs 2024-25. Log scale, so small states stay readable.",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/state_trends_2018_19_to_2024_25.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "value": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.measure == 'consumption_total' && datum.state != 'Australia' && (datum.year == '2018-19' || datum.year == '2024-25')"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0,
+        "labelFontSize": 12,
+        "orient": "top",
+        "domain": false,
+        "ticks": false
+      },
+      "scale": {
+        "padding": 0.5
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "type": "log",
+        "domain": [
+          1500,
+          80000
+        ]
+      },
+      "axis": null
+    },
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "Western Australia",
+          "South Australia",
+          "Tasmania",
+          "Australian Capital Territory",
+          "Northern Territory"
+        ],
+        "range": [
+          "#0072B2",
+          "#D55E00",
+          "#009E73",
+          "#CC79A7",
+          "#E69F00",
+          "#56B4E9",
+          "#7a7a7a",
+          "#a6761d"
+        ]
+      },
+      "legend": null
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "detail": {
+          "field": "state",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 80,
+        "opacity": 1
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "value",
+            "title": "Spend ($ million)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == '2018-19'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -10,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "#333"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state != 'Victoria' && datum.state != 'Queensland'"
+        },
+        {
+          "calculate": "format(datum.value,',.0f')",
+          "as": "v"
+        },
+        {
+          "filter": "datum.year == '2024-25'"
+        },
+        {
+          "calculate": "'$' + datum.v + 'm'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "#333"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state == 'Victoria'"
+        },
+        {
+          "calculate": "format(datum.value,',.0f')",
+          "as": "v"
+        },
+        {
+          "filter": "datum.year == '2024-25'"
+        },
+        {
+          "calculate": "'$' + datum.v + 'm'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 11,
+        "dy": -6
+      },
+      "encoding": {
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "#333"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state == 'Queensland'"
+        },
+        {
+          "calculate": "format(datum.value,',.0f')",
+          "as": "v"
+        },
+        {
+          "filter": "datum.year == '2024-25'"
+        },
+        {
+          "calculate": "'$' + datum.v + 'm'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 11,
+        "dy": 7
+      },
+      "encoding": {
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "#333"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

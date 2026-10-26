@@ -1,0 +1,304 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 560,
+  "height": 360,
+  "title": {
+    "text": "The fewer people live in a region, the more visitors spend per resident",
+    "subtitle": "Each dot is a tourism region (2024-25). Population is on a log scale: each step to the right is 10 times more people.",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/regions_2024_25.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "population_2025": "number",
+        "consumption_m": "number",
+        "gva_direct_m": "number",
+        "gva_total_m": "number",
+        "jobs_direct_thousands": "number",
+        "spend_per_resident": "number",
+        "jobs_per_1000_residents": "number",
+        "lat": "number",
+        "lon": "number"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 70,
+        "opacity": 0.85,
+        "stroke": "white",
+        "strokeWidth": 0.8,
+        "clip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "population_2025",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              10000000
+            ]
+          },
+          "title": "Population (log scale)",
+          "axis": {
+            "values": [
+              1000,
+              10000,
+              100000,
+              1000000,
+              10000000
+            ],
+            "format": "~s"
+          }
+        },
+        "y": {
+          "field": "spend_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              40000
+            ]
+          },
+          "title": "Spend per resident ($)",
+          "axis": {
+            "format": "$,.0f"
+          }
+        },
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "New South Wales",
+              "Victoria",
+              "Queensland",
+              "Western Australia",
+              "South Australia",
+              "Tasmania",
+              "Australian Capital Territory",
+              "Northern Territory"
+            ],
+            "range": [
+              "#0072B2",
+              "#D55E00",
+              "#009E73",
+              "#CC79A7",
+              "#E69F00",
+              "#56B4E9",
+              "#7a7a7a",
+              "#a6761d"
+            ]
+          },
+          "legend": {
+            "title": "State",
+            "orient": "right"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "population_2025",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          },
+          {
+            "field": "spend_per_resident",
+            "type": "quantitative",
+            "title": "Spend per resident",
+            "format": "$,.0f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.region == 'East Coast' || datum.region == 'Whitsundays' || datum.region == 'Kangaroo Island' || datum.region == 'Gold Coast'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "dy": -6,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#222"
+      },
+      "encoding": {
+        "x": {
+          "field": "population_2025",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              10000000
+            ]
+          }
+        },
+        "y": {
+          "field": "spend_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              40000
+            ]
+          }
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.region == 'Melbourne'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "dy": -12,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#222"
+      },
+      "encoding": {
+        "x": {
+          "field": "population_2025",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              10000000
+            ]
+          }
+        },
+        "y": {
+          "field": "spend_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              40000
+            ]
+          }
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.region == 'Sydney'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "dy": 16,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#222"
+      },
+      "encoding": {
+        "x": {
+          "field": "population_2025",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              10000000
+            ]
+          }
+        },
+        "y": {
+          "field": "spend_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              40000
+            ]
+          }
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 1500,
+            "y": 38500
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 11,
+        "color": "#555"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "domain": [
+              1000,
+              10000000
+            ]
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              40000
+            ]
+          }
+        },
+        "text": {
+          "value": "Lasseter (Uluru): $181,050, off the top of this chart"
+        }
+      }
+    }
+  ]
+}

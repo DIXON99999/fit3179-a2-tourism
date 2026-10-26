@@ -1,0 +1,505 @@
+state,year,measure,value,unit
+New South Wales,2018-19,gva,15750.446,$ million - basic prices
+Victoria,2018-19,gva,11868.463,$ million - basic prices
+Queensland,2018-19,gva,10959.798,$ million - basic prices
+South Australia,2018-19,gva,2446.534,$ million - basic prices
+Western Australia,2018-19,gva,4620.717,$ million - basic prices
+Tasmania,2018-19,gva,1276.963,$ million - basic prices
+Northern Territory,2018-19,gva,629.359,$ million - basic prices
+Australian Capital Territory,2018-19,gva,992.721,$ million - basic prices
+Australia,2018-19,gva,48545.0,$ million - basic prices
+New South Wales,2019-20,gva,12753.532,$ million - basic prices
+Victoria,2019-20,gva,9902.618,$ million - basic prices
+Queensland,2019-20,gva,9335.444,$ million - basic prices
+South Australia,2019-20,gva,2134.934,$ million - basic prices
+Western Australia,2019-20,gva,4102.713,$ million - basic prices
+Tasmania,2019-20,gva,1050.345,$ million - basic prices
+Northern Territory,2019-20,gva,478.965,$ million - basic prices
+Australian Capital Territory,2019-20,gva,742.45,$ million - basic prices
+Australia,2019-20,gva,40501.0,$ million - basic prices
+New South Wales,2020-21,gva,9068.135,$ million - basic prices
+Victoria,2020-21,gva,5006.674,$ million - basic prices
+Queensland,2020-21,gva,7282.382,$ million - basic prices
+South Australia,2020-21,gva,1757.126,$ million - basic prices
+Western Australia,2020-21,gva,3363.682,$ million - basic prices
+Tasmania,2020-21,gva,775.202,$ million - basic prices
+Northern Territory,2020-21,gva,241.788,$ million - basic prices
+Australian Capital Territory,2020-21,gva,541.01,$ million - basic prices
+Australia,2020-21,gva,28036.0,$ million - basic prices
+New South Wales,2021-22,gva,9752.677,$ million - basic prices
+Victoria,2021-22,gva,7755.868,$ million - basic prices
+Queensland,2021-22,gva,8945.354,$ million - basic prices
+South Australia,2021-22,gva,2131.729,$ million - basic prices
+Western Australia,2021-22,gva,4220.157,$ million - basic prices
+Tasmania,2021-22,gva,1116.583,$ million - basic prices
+Northern Territory,2021-22,gva,342.698,$ million - basic prices
+Australian Capital Territory,2021-22,gva,556.935,$ million - basic prices
+Australia,2021-22,gva,34822,$ million - basic prices
+New South Wales,2022-23,gva,19005.205,$ million - basic prices
+Victoria,2022-23,gva,13738.614,$ million - basic prices
+Queensland,2022-23,gva,15390.795,$ million - basic prices
+South Australia,2022-23,gva,3579.672,$ million - basic prices
+Western Australia,2022-23,gva,6493.729,$ million - basic prices
+Tasmania,2022-23,gva,1565.6,$ million - basic prices
+Northern Territory,2022-23,gva,695.506,$ million - basic prices
+Australian Capital Territory,2022-23,gva,1165.878,$ million - basic prices
+Australia,2022-23,gva,61635.0,$ million - basic prices
+New South Wales,2023-24,gva,20533.319,$ million - basic prices
+Victoria,2023-24,gva,15677.697,$ million - basic prices
+Queensland,2023-24,gva,15968.203,$ million - basic prices
+South Australia,2023-24,gva,3736.982,$ million - basic prices
+Western Australia,2023-24,gva,7110.306,$ million - basic prices
+Tasmania,2023-24,gva,1798.666,$ million - basic prices
+Northern Territory,2023-24,gva,832.073,$ million - basic prices
+Australian Capital Territory,2023-24,gva,1298.753,$ million - basic prices
+Australia,2023-24,gva,66956.0,$ million - basic prices
+New South Wales,2024-25,gva,21738.07,$ million - basic prices
+Victoria,2024-25,gva,16687.647,$ million - basic prices
+Queensland,2024-25,gva,16452.603,$ million - basic prices
+South Australia,2024-25,gva,3825.793,$ million - basic prices
+Western Australia,2024-25,gva,6765.879,$ million - basic prices
+Tasmania,2024-25,gva,1815.154,$ million - basic prices
+Northern Territory,2024-25,gva,933.063,$ million - basic prices
+Australian Capital Territory,2024-25,gva,1295.79,$ million - basic prices
+Australia,2024-25,gva,69514.0,$ million - basic prices
+New South Wales,2018-19,net_taxes,2563.066,$ million - basic prices
+Victoria,2018-19,net_taxes,1987.991,$ million - basic prices
+Queensland,2018-19,net_taxes,1730.484,$ million - basic prices
+South Australia,2018-19,net_taxes,449.981,$ million - basic prices
+Western Australia,2018-19,net_taxes,812.271,$ million - basic prices
+Tasmania,2018-19,net_taxes,194.356,$ million - basic prices
+Northern Territory,2018-19,net_taxes,85.2,$ million - basic prices
+Australian Capital Territory,2018-19,net_taxes,140.65,$ million - basic prices
+Australia,2018-19,net_taxes,7964.0,$ million - basic prices
+New South Wales,2019-20,net_taxes,1931.938,$ million - basic prices
+Victoria,2019-20,net_taxes,1531.104,$ million - basic prices
+Queensland,2019-20,net_taxes,1339.868,$ million - basic prices
+South Australia,2019-20,net_taxes,363.231,$ million - basic prices
+Western Australia,2019-20,net_taxes,660.502,$ million - basic prices
+Tasmania,2019-20,net_taxes,146.168,$ million - basic prices
+Northern Territory,2019-20,net_taxes,51.205,$ million - basic prices
+Australian Capital Territory,2019-20,net_taxes,89.984,$ million - basic prices
+Australia,2019-20,net_taxes,6114.0,$ million - basic prices
+New South Wales,2020-21,net_taxes,1494.31,$ million - basic prices
+Victoria,2020-21,net_taxes,940.384,$ million - basic prices
+Queensland,2020-21,net_taxes,964.393,$ million - basic prices
+South Australia,2020-21,net_taxes,325.29,$ million - basic prices
+Western Australia,2020-21,net_taxes,564.46,$ million - basic prices
+Tasmania,2020-21,net_taxes,100.67,$ million - basic prices
+Northern Territory,2020-21,net_taxes,12.232,$ million - basic prices
+Australian Capital Territory,2020-21,net_taxes,30.262,$ million - basic prices
+Australia,2020-21,net_taxes,4432.0,$ million - basic prices
+New South Wales,2021-22,net_taxes,1769.3,$ million - basic prices
+Victoria,2021-22,net_taxes,1541.755,$ million - basic prices
+Queensland,2021-22,net_taxes,1477.489,$ million - basic prices
+South Australia,2021-22,net_taxes,439.879,$ million - basic prices
+Western Australia,2021-22,net_taxes,806.352,$ million - basic prices
+Tasmania,2021-22,net_taxes,170.548,$ million - basic prices
+Northern Territory,2021-22,net_taxes,34.877,$ million - basic prices
+Australian Capital Territory,2021-22,net_taxes,62.799,$ million - basic prices
+Australia,2021-22,net_taxes,6303.0,$ million - basic prices
+New South Wales,2022-23,net_taxes,3190.366,$ million - basic prices
+Victoria,2022-23,net_taxes,2512.081,$ million - basic prices
+Queensland,2022-23,net_taxes,2504.037,$ million - basic prices
+South Australia,2022-23,net_taxes,676.806,$ million - basic prices
+Western Australia,2022-23,net_taxes,1176.275,$ million - basic prices
+Tasmania,2022-23,net_taxes,245.79,$ million - basic prices
+Northern Territory,2022-23,net_taxes,98.703,$ million - basic prices
+Australian Capital Territory,2022-23,net_taxes,158.942,$ million - basic prices
+Australia,2022-23,net_taxes,10563.0,$ million - basic prices
+New South Wales,2023-24,net_taxes,3359.293,$ million - basic prices
+Victoria,2023-24,net_taxes,2737.631,$ million - basic prices
+Queensland,2023-24,net_taxes,2554.907,$ million - basic prices
+South Australia,2023-24,net_taxes,695.511,$ million - basic prices
+Western Australia,2023-24,net_taxes,1305.823,$ million - basic prices
+Tasmania,2023-24,net_taxes,278.67,$ million - basic prices
+Northern Territory,2023-24,net_taxes,116.83,$ million - basic prices
+Australian Capital Territory,2023-24,net_taxes,173.335,$ million - basic prices
+Australia,2023-24,net_taxes,11222.0,$ million - basic prices
+New South Wales,2024-25,net_taxes,3531.901,$ million - basic prices
+Victoria,2024-25,net_taxes,2878.788,$ million - basic prices
+Queensland,2024-25,net_taxes,2713.036,$ million - basic prices
+South Australia,2024-25,net_taxes,704.751,$ million - basic prices
+Western Australia,2024-25,net_taxes,1202.516,$ million - basic prices
+Tasmania,2024-25,net_taxes,282.11,$ million - basic prices
+Northern Territory,2024-25,net_taxes,134.806,$ million - basic prices
+Australian Capital Territory,2024-25,net_taxes,176.091,$ million - basic prices
+Australia,2024-25,net_taxes,11624.0,$ million - basic prices
+New South Wales,2018-19,gsp,18313.512,$ million - basic prices
+Victoria,2018-19,gsp,13856.454,$ million - basic prices
+Queensland,2018-19,gsp,12690.282,$ million - basic prices
+South Australia,2018-19,gsp,2896.515,$ million - basic prices
+Western Australia,2018-19,gsp,5432.988,$ million - basic prices
+Tasmania,2018-19,gsp,1471.319,$ million - basic prices
+Northern Territory,2018-19,gsp,714.559,$ million - basic prices
+Australian Capital Territory,2018-19,gsp,1133.371,$ million - basic prices
+Australia,2018-19,gsp,56509,$ million - basic prices
+New South Wales,2019-20,gsp,14685.47,$ million - basic prices
+Victoria,2019-20,gsp,11433.722,$ million - basic prices
+Queensland,2019-20,gsp,10675.312,$ million - basic prices
+South Australia,2019-20,gsp,2498.164,$ million - basic prices
+Western Australia,2019-20,gsp,4763.215,$ million - basic prices
+Tasmania,2019-20,gsp,1196.513,$ million - basic prices
+Northern Territory,2019-20,gsp,530.17,$ million - basic prices
+Australian Capital Territory,2019-20,gsp,832.435,$ million - basic prices
+Australia,2019-20,gsp,46615.0,$ million - basic prices
+New South Wales,2020-21,gsp,10562.446,$ million - basic prices
+Victoria,2020-21,gsp,5947.057,$ million - basic prices
+Queensland,2020-21,gsp,8246.775,$ million - basic prices
+South Australia,2020-21,gsp,2082.416,$ million - basic prices
+Western Australia,2020-21,gsp,3928.142,$ million - basic prices
+Tasmania,2020-21,gsp,875.873,$ million - basic prices
+Northern Territory,2020-21,gsp,254.02,$ million - basic prices
+Australian Capital Territory,2020-21,gsp,571.272,$ million - basic prices
+Australia,2020-21,gsp,32468.0,$ million - basic prices
+New South Wales,2021-22,gsp,11521.977,$ million - basic prices
+Victoria,2021-22,gsp,9297.623,$ million - basic prices
+Queensland,2021-22,gsp,10422.843,$ million - basic prices
+South Australia,2021-22,gsp,2571.608,$ million - basic prices
+Western Australia,2021-22,gsp,5026.509,$ million - basic prices
+Tasmania,2021-22,gsp,1287.131,$ million - basic prices
+Northern Territory,2021-22,gsp,377.575,$ million - basic prices
+Australian Capital Territory,2021-22,gsp,619.733,$ million - basic prices
+Australia,2021-22,gsp,41125,$ million - basic prices
+New South Wales,2022-23,gsp,22195.571,$ million - basic prices
+Victoria,2022-23,gsp,16250.695,$ million - basic prices
+Queensland,2022-23,gsp,17894.832,$ million - basic prices
+South Australia,2022-23,gsp,4256.477,$ million - basic prices
+Western Australia,2022-23,gsp,7670.004,$ million - basic prices
+Tasmania,2022-23,gsp,1811.39,$ million - basic prices
+Northern Territory,2022-23,gsp,794.21,$ million - basic prices
+Australian Capital Territory,2022-23,gsp,1324.82,$ million - basic prices
+Australia,2022-23,gsp,72198.0,$ million - basic prices
+New South Wales,2023-24,gsp,23892.612,$ million - basic prices
+Victoria,2023-24,gsp,18415.328,$ million - basic prices
+Queensland,2023-24,gsp,18523.11,$ million - basic prices
+South Australia,2023-24,gsp,4432.493,$ million - basic prices
+Western Australia,2023-24,gsp,8416.129,$ million - basic prices
+Tasmania,2023-24,gsp,2077.336,$ million - basic prices
+Northern Territory,2023-24,gsp,948.903,$ million - basic prices
+Australian Capital Territory,2023-24,gsp,1472.088,$ million - basic prices
+Australia,2023-24,gsp,78178.0,$ million - basic prices
+New South Wales,2024-25,gsp,25269.972,$ million - basic prices
+Victoria,2024-25,gsp,19566.435,$ million - basic prices
+Queensland,2024-25,gsp,19165.639,$ million - basic prices
+South Australia,2024-25,gsp,4530.544,$ million - basic prices
+Western Australia,2024-25,gsp,7968.395,$ million - basic prices
+Tasmania,2024-25,gsp,2097.264,$ million - basic prices
+Northern Territory,2024-25,gsp,1067.869,$ million - basic prices
+Australian Capital Territory,2024-25,gsp,1471.881,$ million - basic prices
+Australia,2024-25,gsp,81138.0,$ million - basic prices
+New South Wales,2018-19,jobs,172.397,'000
+Victoria,2018-19,jobs,150.15,'000
+Queensland,2018-19,jobs,127.809,'000
+South Australia,2018-19,jobs,31.68,'000
+Western Australia,2018-19,jobs,50.546,'000
+Tasmania,2018-19,jobs,17.109,'000
+Northern Territory,2018-19,jobs,5.576,'000
+Australian Capital Territory,2018-19,jobs,10.034,'000
+Australia,2018-19,jobs,565.3,'000
+New South Wales,2019-20,jobs,152.361,'000
+Victoria,2019-20,jobs,133.545,'000
+Queensland,2019-20,jobs,120.152,'000
+South Australia,2019-20,jobs,29.579,'000
+Western Australia,2019-20,jobs,46.797,'000
+Tasmania,2019-20,jobs,15.908,'000
+Northern Territory,2019-20,jobs,4.522,'000
+Australian Capital Territory,2019-20,jobs,7.836,'000
+Australia,2019-20,jobs,510.7,'000
+New South Wales,2020-21,jobs,120.627,'000
+Victoria,2020-21,jobs,85.603,'000
+Queensland,2020-21,jobs,103.418,'000
+South Australia,2020-21,jobs,28.072,'000
+Western Australia,2020-21,jobs,44.701,'000
+Tasmania,2020-21,jobs,14.912,'000
+Northern Territory,2020-21,jobs,2.894,'000
+Australian Capital Territory,2020-21,jobs,7.473,'000
+Australia,2020-21,jobs,407.7,'000
+New South Wales,2021-22,jobs,113.769,'000
+Victoria,2021-22,jobs,115.719,'000
+Queensland,2021-22,jobs,113.102,'000
+South Australia,2021-22,jobs,27.872,'000
+Western Australia,2021-22,jobs,49.593,'000
+Tasmania,2021-22,jobs,17.534,'000
+Northern Territory,2021-22,jobs,3.409,'000
+Australian Capital Territory,2021-22,jobs,6.102,'000
+Australia,2021-22,jobs,447.1,'000
+New South Wales,2022-23,jobs,189.834,'000
+Victoria,2022-23,jobs,166.867,'000
+Queensland,2022-23,jobs,153.222,'000
+South Australia,2022-23,jobs,39.309,'000
+Western Australia,2022-23,jobs,64.984,'000
+Tasmania,2022-23,jobs,19.189,'000
+Northern Territory,2022-23,jobs,5.538,'000
+Australian Capital Territory,2022-23,jobs,10.856,'000
+Australia,2022-23,jobs,649.8,'000
+New South Wales,2023-24,jobs,195.662,'000
+Victoria,2023-24,jobs,185.123,'000
+Queensland,2023-24,jobs,153.839,'000
+South Australia,2023-24,jobs,38.6,'000
+Western Australia,2023-24,jobs,70.2,'000
+Tasmania,2023-24,jobs,21.241,'000
+Northern Territory,2023-24,jobs,5.837,'000
+Australian Capital Territory,2023-24,jobs,11.398,'000
+Australia,2023-24,jobs,681.9,'000
+New South Wales,2024-25,jobs,203.231,'000
+Victoria,2024-25,jobs,189.582,'000
+Queensland,2024-25,jobs,160.955,'000
+South Australia,2024-25,jobs,39.156,'000
+Western Australia,2024-25,jobs,65.155,'000
+Tasmania,2024-25,jobs,20.949,'000
+Northern Territory,2024-25,jobs,6.371,'000
+Australian Capital Territory,2024-25,jobs,10.502,'000
+Australia,2024-25,jobs,695.9,'000
+New South Wales,2018-19,consumption_same_day,7793.146,$ million - purchaser's prices
+Victoria,2018-19,consumption_same_day,6559.139,$ million - purchaser's prices
+Queensland,2018-19,consumption_same_day,4506.703,$ million - purchaser's prices
+South Australia,2018-19,consumption_same_day,1241.24,$ million - purchaser's prices
+Western Australia,2018-19,consumption_same_day,2584.69,$ million - purchaser's prices
+Tasmania,2018-19,consumption_same_day,420.9,$ million - purchaser's prices
+Northern Territory,2018-19,consumption_same_day,70.819,$ million - purchaser's prices
+Australian Capital Territory,2018-19,consumption_same_day,246.364,$ million - purchaser's prices
+Australia,2018-19,consumption_same_day,23423.0,$ million - purchaser's prices
+New South Wales,2019-20,consumption_same_day,7764.513,$ million - purchaser's prices
+Victoria,2019-20,consumption_same_day,6408.545,$ million - purchaser's prices
+Queensland,2019-20,consumption_same_day,4732.948,$ million - purchaser's prices
+South Australia,2019-20,consumption_same_day,1293.195,$ million - purchaser's prices
+Western Australia,2019-20,consumption_same_day,2734.594,$ million - purchaser's prices
+Tasmania,2019-20,consumption_same_day,486.976,$ million - purchaser's prices
+Northern Territory,2019-20,consumption_same_day,75.596,$ million - purchaser's prices
+Australian Capital Territory,2019-20,consumption_same_day,246.633,$ million - purchaser's prices
+Australia,2019-20,consumption_same_day,23743,$ million - purchaser's prices
+New South Wales,2020-21,consumption_same_day,7900.372,$ million - purchaser's prices
+Victoria,2020-21,consumption_same_day,6008.762,$ million - purchaser's prices
+Queensland,2020-21,consumption_same_day,4905.865,$ million - purchaser's prices
+South Australia,2020-21,consumption_same_day,1544.982,$ million - purchaser's prices
+Western Australia,2020-21,consumption_same_day,3329.939,$ million - purchaser's prices
+Tasmania,2020-21,consumption_same_day,559.363,$ million - purchaser's prices
+Northern Territory,2020-21,consumption_same_day,125.483,$ million - purchaser's prices
+Australian Capital Territory,2020-21,consumption_same_day,217.234,$ million - purchaser's prices
+Australia,2020-21,consumption_same_day,24592.0,$ million - purchaser's prices
+New South Wales,2021-22,consumption_same_day,8451.04,$ million - purchaser's prices
+Victoria,2021-22,consumption_same_day,8386.779,$ million - purchaser's prices
+Queensland,2021-22,consumption_same_day,6142.801,$ million - purchaser's prices
+South Australia,2021-22,consumption_same_day,1899.647,$ million - purchaser's prices
+Western Australia,2021-22,consumption_same_day,3444.171,$ million - purchaser's prices
+Tasmania,2021-22,consumption_same_day,720.572,$ million - purchaser's prices
+Northern Territory,2021-22,consumption_same_day,93.662,$ million - purchaser's prices
+Australian Capital Territory,2021-22,consumption_same_day,311.328,$ million - purchaser's prices
+Australia,2021-22,consumption_same_day,29450.0,$ million - purchaser's prices
+New South Wales,2022-23,consumption_same_day,12119.179,$ million - purchaser's prices
+Victoria,2022-23,consumption_same_day,11190.834,$ million - purchaser's prices
+Queensland,2022-23,consumption_same_day,7721.235,$ million - purchaser's prices
+South Australia,2022-23,consumption_same_day,2379.769,$ million - purchaser's prices
+Western Australia,2022-23,consumption_same_day,4433.946,$ million - purchaser's prices
+Tasmania,2022-23,consumption_same_day,737.109,$ million - purchaser's prices
+Northern Territory,2022-23,consumption_same_day,144.295,$ million - purchaser's prices
+Australian Capital Territory,2022-23,consumption_same_day,542.632,$ million - purchaser's prices
+Australia,2022-23,consumption_same_day,39269.0,$ million - purchaser's prices
+New South Wales,2023-24,consumption_same_day,13495.756,$ million - purchaser's prices
+Victoria,2023-24,consumption_same_day,11803.983,$ million - purchaser's prices
+Queensland,2023-24,consumption_same_day,7417.116,$ million - purchaser's prices
+South Australia,2023-24,consumption_same_day,2362.05,$ million - purchaser's prices
+Western Australia,2023-24,consumption_same_day,5340.581,$ million - purchaser's prices
+Tasmania,2023-24,consumption_same_day,761.307,$ million - purchaser's prices
+Northern Territory,2023-24,consumption_same_day,185.177,$ million - purchaser's prices
+Australian Capital Territory,2023-24,consumption_same_day,425.03,$ million - purchaser's prices
+Australia,2023-24,consumption_same_day,41791.0,$ million - purchaser's prices
+New South Wales,2024-25,consumption_same_day,13757.087,$ million - purchaser's prices
+Victoria,2024-25,consumption_same_day,12777.636,$ million - purchaser's prices
+Queensland,2024-25,consumption_same_day,8850.512,$ million - purchaser's prices
+South Australia,2024-25,consumption_same_day,2546.487,$ million - purchaser's prices
+Western Australia,2024-25,consumption_same_day,4588.942,$ million - purchaser's prices
+Tasmania,2024-25,consumption_same_day,840.125,$ million - purchaser's prices
+Northern Territory,2024-25,consumption_same_day,260.518,$ million - purchaser's prices
+Australian Capital Territory,2024-25,consumption_same_day,393.693,$ million - purchaser's prices
+Australia,2024-25,consumption_same_day,44015.0,$ million - purchaser's prices
+New South Wales,2018-19,consumption_overnight,26874.182,$ million - purchaser's prices
+Victoria,2018-19,consumption_overnight,19791.881,$ million - purchaser's prices
+Queensland,2018-19,consumption_overnight,20537.026,$ million - purchaser's prices
+South Australia,2018-19,consumption_overnight,5184.951,$ million - purchaser's prices
+Western Australia,2018-19,consumption_overnight,9074.794,$ million - purchaser's prices
+Tasmania,2018-19,consumption_overnight,2679.205,$ million - purchaser's prices
+Northern Territory,2018-19,consumption_overnight,997.347,$ million - purchaser's prices
+Australian Capital Territory,2018-19,consumption_overnight,1940.615,$ million - purchaser's prices
+Australia,2018-19,consumption_overnight,87080,$ million - purchaser's prices
+New South Wales,2019-20,consumption_overnight,21746.018,$ million - purchaser's prices
+Victoria,2019-20,consumption_overnight,16240.631,$ million - purchaser's prices
+Queensland,2019-20,consumption_overnight,17353.474,$ million - purchaser's prices
+South Australia,2019-20,consumption_overnight,4383.82,$ million - purchaser's prices
+Western Australia,2019-20,consumption_overnight,7869.854,$ million - purchaser's prices
+Tasmania,2019-20,consumption_overnight,2148.53,$ million - purchaser's prices
+Northern Territory,2019-20,consumption_overnight,710.986,$ million - purchaser's prices
+Australian Capital Territory,2019-20,consumption_overnight,1474.687,$ million - purchaser's prices
+Australia,2019-20,consumption_overnight,71928,$ million - purchaser's prices
+New South Wales,2020-21,consumption_overnight,22081.115,$ million - purchaser's prices
+Victoria,2020-21,consumption_overnight,11231.321,$ million - purchaser's prices
+Queensland,2020-21,consumption_overnight,18278.744,$ million - purchaser's prices
+South Australia,2020-21,consumption_overnight,4532.442,$ million - purchaser's prices
+Western Australia,2020-21,consumption_overnight,8302.994,$ million - purchaser's prices
+Tasmania,2020-21,consumption_overnight,1985.393,$ million - purchaser's prices
+Northern Territory,2020-21,consumption_overnight,630.89,$ million - purchaser's prices
+Australian Capital Territory,2020-21,consumption_overnight,1406.1,$ million - purchaser's prices
+Australia,2020-21,consumption_overnight,68449,$ million - purchaser's prices
+New South Wales,2021-22,consumption_overnight,21644.137,$ million - purchaser's prices
+Victoria,2021-22,consumption_overnight,16179.134,$ million - purchaser's prices
+Queensland,2021-22,consumption_overnight,21688.14,$ million - purchaser's prices
+South Australia,2021-22,consumption_overnight,5300.062,$ million - purchaser's prices
+Western Australia,2021-22,consumption_overnight,10550.111,$ million - purchaser's prices
+Tasmania,2021-22,consumption_overnight,2836.016,$ million - purchaser's prices
+Northern Territory,2021-22,consumption_overnight,845.634,$ million - purchaser's prices
+Australian Capital Territory,2021-22,consumption_overnight,1269.766,$ million - purchaser's prices
+Australia,2021-22,consumption_overnight,80313.0,$ million - purchaser's prices
+New South Wales,2022-23,consumption_overnight,35013.556,$ million - purchaser's prices
+Victoria,2022-23,consumption_overnight,25734.487,$ million - purchaser's prices
+Queensland,2022-23,consumption_overnight,31732.172,$ million - purchaser's prices
+South Australia,2022-23,consumption_overnight,7439.444,$ million - purchaser's prices
+Western Australia,2022-23,consumption_overnight,13057.012,$ million - purchaser's prices
+Tasmania,2022-23,consumption_overnight,3480.418,$ million - purchaser's prices
+Northern Territory,2022-23,consumption_overnight,1311.154,$ million - purchaser's prices
+Australian Capital Territory,2022-23,consumption_overnight,2279.756,$ million - purchaser's prices
+Australia,2022-23,consumption_overnight,120048.0,$ million - purchaser's prices
+New South Wales,2023-24,consumption_overnight,34837.751,$ million - purchaser's prices
+Victoria,2023-24,consumption_overnight,27211.836,$ million - purchaser's prices
+Queensland,2023-24,consumption_overnight,31892.607,$ million - purchaser's prices
+South Australia,2023-24,consumption_overnight,7773.354,$ million - purchaser's prices
+Western Australia,2023-24,consumption_overnight,14209.984,$ million - purchaser's prices
+Tasmania,2023-24,consumption_overnight,3896.013,$ million - purchaser's prices
+Northern Territory,2023-24,consumption_overnight,1452.427,$ million - purchaser's prices
+Australian Capital Territory,2023-24,consumption_overnight,2627.027,$ million - purchaser's prices
+Australia,2023-24,consumption_overnight,123901.0,$ million - purchaser's prices
+New South Wales,2024-25,consumption_overnight,36498.599,$ million - purchaser's prices
+Victoria,2024-25,consumption_overnight,27538.627,$ million - purchaser's prices
+Queensland,2024-25,consumption_overnight,32274.777,$ million - purchaser's prices
+South Australia,2024-25,consumption_overnight,7557.182,$ million - purchaser's prices
+Western Australia,2024-25,consumption_overnight,12824.521,$ million - purchaser's prices
+Tasmania,2024-25,consumption_overnight,3806.7,$ million - purchaser's prices
+Northern Territory,2024-25,consumption_overnight,1727.056,$ million - purchaser's prices
+Australian Capital Territory,2024-25,consumption_overnight,2602.537,$ million - purchaser's prices
+Australia,2024-25,consumption_overnight,124830.0,$ million - purchaser's prices
+New South Wales,2018-19,consumption_international,13374.259,$ million - purchaser's prices
+Victoria,2018-19,consumption_international,10005.803,$ million - purchaser's prices
+Queensland,2018-19,consumption_international,7525.203,$ million - purchaser's prices
+South Australia,2018-19,consumption_international,1330.998,$ million - purchaser's prices
+Western Australia,2018-19,consumption_international,2747.977,$ million - purchaser's prices
+Tasmania,2018-19,consumption_international,710.945,$ million - purchaser's prices
+Northern Territory,2018-19,consumption_international,673.31,$ million - purchaser's prices
+Australian Capital Territory,2018-19,consumption_international,702.505,$ million - purchaser's prices
+Australia,2018-19,consumption_international,37071.0,$ million - purchaser's prices
+New South Wales,2019-20,consumption_international,9616.136,$ million - purchaser's prices
+Victoria,2019-20,consumption_international,7768.373,$ million - purchaser's prices
+Queensland,2019-20,consumption_international,5773.422,$ million - purchaser's prices
+South Australia,2019-20,consumption_international,1108.463,$ million - purchaser's prices
+Western Australia,2019-20,consumption_international,2237.683,$ million - purchaser's prices
+Tasmania,2019-20,consumption_international,533.02,$ million - purchaser's prices
+Northern Territory,2019-20,consumption_international,528.474,$ million - purchaser's prices
+Australian Capital Territory,2019-20,consumption_international,439.429,$ million - purchaser's prices
+Australia,2019-20,consumption_international,28005.0,$ million - purchaser's prices
+New South Wales,2020-21,consumption_international,433.313,$ million - purchaser's prices
+Victoria,2020-21,consumption_international,113.08,$ million - purchaser's prices
+Queensland,2020-21,consumption_international,235.884,$ million - purchaser's prices
+South Australia,2020-21,consumption_international,37.857,$ million - purchaser's prices
+Western Australia,2020-21,consumption_international,72.802,$ million - purchaser's prices
+Tasmania,2020-21,consumption_international,6.38,$ million - purchaser's prices
+Northern Territory,2020-21,consumption_international,15.298,$ million - purchaser's prices
+Australian Capital Territory,2020-21,consumption_international,40.385,$ million - purchaser's prices
+Australia,2020-21,consumption_international,955.0,$ million - purchaser's prices
+New South Wales,2021-22,consumption_international,2260.401,$ million - purchaser's prices
+Victoria,2021-22,consumption_international,1806.832,$ million - purchaser's prices
+Queensland,2021-22,consumption_international,790.435,$ million - purchaser's prices
+South Australia,2021-22,consumption_international,150.799,$ million - purchaser's prices
+Western Australia,2021-22,consumption_international,345.674,$ million - purchaser's prices
+Tasmania,2021-22,consumption_international,35.649,$ million - purchaser's prices
+Northern Territory,2021-22,consumption_international,59.746,$ million - purchaser's prices
+Australian Capital Territory,2021-22,consumption_international,110.464,$ million - purchaser's prices
+Australia,2021-22,consumption_international,5560.0,$ million - purchaser's prices
+New South Wales,2022-23,consumption_international,10429.324,$ million - purchaser's prices
+Victoria,2022-23,consumption_international,5769.938,$ million - purchaser's prices
+Queensland,2022-23,consumption_international,5567.568,$ million - purchaser's prices
+South Australia,2022-23,consumption_international,1361.044,$ million - purchaser's prices
+Western Australia,2022-23,consumption_international,2562.083,$ million - purchaser's prices
+Tasmania,2022-23,consumption_international,414.748,$ million - purchaser's prices
+Northern Territory,2022-23,consumption_international,446.312,$ million - purchaser's prices
+Australian Capital Territory,2022-23,consumption_international,508.985,$ million - purchaser's prices
+Australia,2022-23,consumption_international,27060.0,$ million - purchaser's prices
+New South Wales,2023-24,consumption_international,14372.357,$ million - purchaser's prices
+Victoria,2023-24,consumption_international,9556.935,$ million - purchaser's prices
+Queensland,2023-24,consumption_international,7834.746,$ million - purchaser's prices
+South Australia,2023-24,consumption_international,1634.808,$ million - purchaser's prices
+Western Australia,2023-24,consumption_international,2959.342,$ million - purchaser's prices
+Tasmania,2023-24,consumption_international,703.062,$ million - purchaser's prices
+Northern Territory,2023-24,consumption_international,686.808,$ million - purchaser's prices
+Australian Capital Territory,2023-24,consumption_international,661.94,$ million - purchaser's prices
+Australia,2023-24,consumption_international,38410.0,$ million - purchaser's prices
+New South Wales,2024-25,consumption_international,15668.674,$ million - purchaser's prices
+Victoria,2024-25,consumption_international,11086.674,$ million - purchaser's prices
+Queensland,2024-25,consumption_international,7876.231,$ million - purchaser's prices
+South Australia,2024-25,consumption_international,1897.584,$ million - purchaser's prices
+Western Australia,2024-25,consumption_international,3671.695,$ million - purchaser's prices
+Tasmania,2024-25,consumption_international,755.14,$ million - purchaser's prices
+Northern Territory,2024-25,consumption_international,634.056,$ million - purchaser's prices
+Australian Capital Territory,2024-25,consumption_international,704.945,$ million - purchaser's prices
+Australia,2024-25,consumption_international,42295.0,$ million - purchaser's prices
+New South Wales,2018-19,consumption_total,48041.587,$ million - purchaser's prices
+Victoria,2018-19,consumption_total,36356.822,$ million - purchaser's prices
+Queensland,2018-19,consumption_total,32568.932,$ million - purchaser's prices
+South Australia,2018-19,consumption_total,7757.188,$ million - purchaser's prices
+Western Australia,2018-19,consumption_total,14407.461,$ million - purchaser's prices
+Tasmania,2018-19,consumption_total,3811.05,$ million - purchaser's prices
+Northern Territory,2018-19,consumption_total,1741.476,$ million - purchaser's prices
+Australian Capital Territory,2018-19,consumption_total,2889.483,$ million - purchaser's prices
+Australia,2018-19,consumption_total,147574.0,$ million - purchaser's prices
+New South Wales,2019-20,consumption_total,39126.667,$ million - purchaser's prices
+Victoria,2019-20,consumption_total,30417.549,$ million - purchaser's prices
+Queensland,2019-20,consumption_total,27859.845,$ million - purchaser's prices
+South Australia,2019-20,consumption_total,6785.478,$ million - purchaser's prices
+Western Australia,2019-20,consumption_total,12842.132,$ million - purchaser's prices
+Tasmania,2019-20,consumption_total,3168.525,$ million - purchaser's prices
+Northern Territory,2019-20,consumption_total,1315.056,$ million - purchaser's prices
+Australian Capital Territory,2019-20,consumption_total,2160.749,$ million - purchaser's prices
+Australia,2019-20,consumption_total,123676,$ million - purchaser's prices
+New South Wales,2020-21,consumption_total,30414.8,$ million - purchaser's prices
+Victoria,2020-21,consumption_total,17353.164,$ million - purchaser's prices
+Queensland,2020-21,consumption_total,23420.494,$ million - purchaser's prices
+South Australia,2020-21,consumption_total,6115.282,$ million - purchaser's prices
+Western Australia,2020-21,consumption_total,11705.735,$ million - purchaser's prices
+Tasmania,2020-21,consumption_total,2551.135,$ million - purchaser's prices
+Northern Territory,2020-21,consumption_total,771.671,$ million - purchaser's prices
+Australian Capital Territory,2020-21,consumption_total,1663.719,$ million - purchaser's prices
+Australia,2020-21,consumption_total,93996,$ million - purchaser's prices
+New South Wales,2021-22,consumption_total,32355.578,$ million - purchaser's prices
+Victoria,2021-22,consumption_total,26372.745,$ million - purchaser's prices
+Queensland,2021-22,consumption_total,28621.376,$ million - purchaser's prices
+South Australia,2021-22,consumption_total,7350.508,$ million - purchaser's prices
+Western Australia,2021-22,consumption_total,14339.956,$ million - purchaser's prices
+Tasmania,2021-22,consumption_total,3592.236,$ million - purchaser's prices
+Northern Territory,2021-22,consumption_total,999.042,$ million - purchaser's prices
+Australian Capital Territory,2021-22,consumption_total,1691.559,$ million - purchaser's prices
+Australia,2021-22,consumption_total,115323.0,$ million - purchaser's prices
+New South Wales,2022-23,consumption_total,57562.059,$ million - purchaser's prices
+Victoria,2022-23,consumption_total,42695.26,$ million - purchaser's prices
+Queensland,2022-23,consumption_total,45020.974,$ million - purchaser's prices
+South Australia,2022-23,consumption_total,11180.257,$ million - purchaser's prices
+Western Australia,2022-23,consumption_total,20053.041,$ million - purchaser's prices
+Tasmania,2022-23,consumption_total,4632.274,$ million - purchaser's prices
+Northern Territory,2022-23,consumption_total,1901.762,$ million - purchaser's prices
+Australian Capital Territory,2022-23,consumption_total,3331.373,$ million - purchaser's prices
+Australia,2022-23,consumption_total,186377.0,$ million - purchaser's prices
+New South Wales,2023-24,consumption_total,62705.864,$ million - purchaser's prices
+Victoria,2023-24,consumption_total,48572.755,$ million - purchaser's prices
+Queensland,2023-24,consumption_total,47144.469,$ million - purchaser's prices
+South Australia,2023-24,consumption_total,11770.213,$ million - purchaser's prices
+Western Australia,2023-24,consumption_total,22509.907,$ million - purchaser's prices
+Tasmania,2023-24,consumption_total,5360.383,$ million - purchaser's prices
+Northern Territory,2023-24,consumption_total,2324.413,$ million - purchaser's prices
+Australian Capital Territory,2023-24,consumption_total,3713.997,$ million - purchaser's prices
+Australia,2023-24,consumption_total,204102.0,$ million - purchaser's prices
+New South Wales,2024-25,consumption_total,65924.36,$ million - purchaser's prices
+Victoria,2024-25,consumption_total,51402.938,$ million - purchaser's prices
+Queensland,2024-25,consumption_total,49001.52,$ million - purchaser's prices
+South Australia,2024-25,consumption_total,12001.253,$ million - purchaser's prices
+Western Australia,2024-25,consumption_total,21085.158,$ million - purchaser's prices
+Tasmania,2024-25,consumption_total,5401.965,$ million - purchaser's prices
+Northern Territory,2024-25,consumption_total,2621.63,$ million - purchaser's prices
+Australian Capital Territory,2024-25,consumption_total,3701.175,$ million - purchaser's prices
+Australia,2024-25,consumption_total,211140.0,$ million - purchaser's prices

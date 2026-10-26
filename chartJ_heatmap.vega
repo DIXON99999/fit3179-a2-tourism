@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 420,
+  "height": 480,
+  "title": {
+    "text": "Melbourne and Sydney fell furthest in 2020-21 and have since bounced back",
+    "subtitle": "Tourism GVA in the 20 biggest regions, 2018-19 = 100 (2023-24 release, not adjusted for inflation)",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/heatmap_index.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "gva_m": "number",
+        "index": "number"
+      }
+    }
+  },
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "index",
+        "op": "min",
+        "order": "ascending"
+      }
+    },
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0,
+        "orient": "top"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "color": {
+          "field": "index",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues",
+            "domain": [
+              25,
+              150
+            ]
+          },
+          "legend": {
+            "title": "Index (2018-19 = 100)",
+            "orient": "right"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "title": "Region"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "gva_m",
+            "title": "GVA ($ million)",
+            "format": ",.0f"
+          },
+          {
+            "field": "index",
+            "title": "Index",
+            "format": ".0f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10
+      },
+      "encoding": {
+        "text": {
+          "field": "index",
+          "type": "quantitative",
+          "format": ".0f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.index > 100",
+            "value": "white"
+          },
+          "value": "#222"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "Three states take nearly four-fifths of the money",
+    "subtitle": "Each square is 1% of the $211B Australians and visitors spent on tourism in 2024-25.",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/waffle_state_share.csv"
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "sort": "descending",
+      "axis": null
+    },
+    "color": {
+      "field": "label",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "NSW 31%",
+          "Vic 24%",
+          "Qld 23%",
+          "WA 10%",
+          "SA 6%",
+          "Tas 3%",
+          "ACT 2%",
+          "NT 1%"
+        ],
+        "range": [
+          "#0072B2",
+          "#D55E00",
+          "#009E73",
+          "#CC79A7",
+          "#E69F00",
+          "#56B4E9",
+          "#7a7a7a",
+          "#a6761d"
+        ]
+      },
+      "legend": {
+        "title": "State and share",
+        "orient": "right"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "state",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "label",
+        "type": "nominal",
+        "title": "Share of national spend"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

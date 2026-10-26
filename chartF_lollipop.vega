@@ -1,0 +1,231 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 520,
+  "height": 330,
+  "title": {
+    "text": "Tasmania's East Coast and the Whitsundays top the list, after Uluru",
+    "subtitle": "The 10 regions with the highest tourist spend per resident, 2024-25",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/regions_2024_25.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "population_2025": "number",
+        "consumption_m": "number",
+        "gva_direct_m": "number",
+        "gva_total_m": "number",
+        "jobs_direct_thousands": "number",
+        "spend_per_resident": "number",
+        "jobs_per_1000_residents": "number",
+        "lat": "number",
+        "lon": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rk"
+        }
+      ],
+      "sort": [
+        {
+          "field": "spend_per_resident",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rk <= 10"
+    },
+    {
+      "calculate": "0",
+      "as": "zero"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 2,
+        "clip": true
+      },
+      "encoding": {
+        "y": {
+          "field": "region",
+          "type": "nominal",
+          "sort": {
+            "field": "spend_per_resident",
+            "order": "descending"
+          },
+          "title": null
+        },
+        "x": {
+          "field": "zero",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              45000
+            ]
+          }
+        },
+        "x2": {
+          "field": "spend_per_resident"
+        },
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "New South Wales",
+              "Victoria",
+              "Queensland",
+              "Western Australia",
+              "South Australia",
+              "Tasmania",
+              "Australian Capital Territory",
+              "Northern Territory"
+            ],
+            "range": [
+              "#0072B2",
+              "#D55E00",
+              "#009E73",
+              "#CC79A7",
+              "#E69F00",
+              "#56B4E9",
+              "#7a7a7a",
+              "#a6761d"
+            ]
+          },
+          "legend": {
+            "title": "State",
+            "orient": "right"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "opacity": 1,
+        "clip": true
+      },
+      "encoding": {
+        "y": {
+          "field": "region",
+          "type": "nominal",
+          "sort": {
+            "field": "spend_per_resident",
+            "order": "descending"
+          }
+        },
+        "x": {
+          "field": "spend_per_resident",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              45000
+            ]
+          },
+          "title": "Spend per resident ($)",
+          "axis": {
+            "format": "$,.0f",
+            "tickMinStep": 10000
+          }
+        },
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "New South Wales",
+              "Victoria",
+              "Queensland",
+              "Western Australia",
+              "South Australia",
+              "Tasmania",
+              "Australian Capital Territory",
+              "Northern Territory"
+            ],
+            "range": [
+              "#0072B2",
+              "#D55E00",
+              "#009E73",
+              "#CC79A7",
+              "#E69F00",
+              "#56B4E9",
+              "#7a7a7a",
+              "#a6761d"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "spend_per_resident",
+            "type": "quantitative",
+            "title": "Spend per resident",
+            "format": "$,.0f"
+          },
+          {
+            "field": "population_2025",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.spend_per_resident > 45000"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "dy": -12,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "y": {
+          "field": "region",
+          "type": "nominal",
+          "sort": {
+            "field": "spend_per_resident",
+            "order": "descending"
+          }
+        },
+        "x": {
+          "datum": 45000,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "$181,050 per resident, off the scale (only 2,337 residents)"
+        }
+      }
+    }
+  ]
+}

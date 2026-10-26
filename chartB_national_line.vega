@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 560,
+  "height": 300,
+  "title": {
+    "text": "Tourism spend fell 36% by 2020-21, then recovered to a record high",
+    "subtitle": "Total tourist spend in Australia, $ billion (not adjusted for inflation)",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/state_trends_2018_19_to_2024_25.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.state == 'Australia' && datum.measure == 'consumption_total'"
+    },
+    {
+      "calculate": "datum.value / 1000",
+      "as": "billions"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#e34a33",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "fill": "#e34a33",
+          "size": 60
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "billions",
+          "type": "quantitative",
+          "title": "Spend ($ billion)",
+          "scale": {
+            "zero": true
+          },
+          "axis": {
+            "format": "$,.0f"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "ordinal",
+            "title": "Year"
+          },
+          {
+            "field": "billions",
+            "type": "quantitative",
+            "title": "Spend ($B)",
+            "format": "$,.1f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == '2020-21'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "dy": 14,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "billions",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "COVID-19: borders shut, spend drops to $94B"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == '2024-25'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -8,
+        "dy": -12,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "billions",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "$211B in 2024-25"
+        }
+      }
+    }
+  ]
+}

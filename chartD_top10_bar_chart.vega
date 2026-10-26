@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 560,
+  "height": 340,
+  "title": {
+    "text": "Sydney and Melbourne lead by a long way; no other region comes close",
+    "subtitle": "The 10 regions with the highest total tourist spend, 2024-25",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/regions_2024_25.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "population_2025": "number",
+        "consumption_m": "number",
+        "gva_direct_m": "number",
+        "gva_total_m": "number",
+        "jobs_direct_thousands": "number",
+        "spend_per_resident": "number",
+        "jobs_per_1000_residents": "number",
+        "lat": "number",
+        "lon": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "consumption_m",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.rank <= 10"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#e34a33"
+  },
+  "encoding": {
+    "y": {
+      "field": "region",
+      "type": "nominal",
+      "sort": {
+        "field": "consumption_m",
+        "order": "descending"
+      },
+      "title": null
+    },
+    "x": {
+      "field": "consumption_m",
+      "type": "quantitative",
+      "title": "Tourist spend ($ million)",
+      "axis": {
+        "format": "$,.0f"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "region",
+        "title": "Region"
+      },
+      {
+        "field": "state",
+        "title": "State"
+      },
+      {
+        "field": "consumption_m",
+        "title": "Spend ($ million)",
+        "format": "$,.0f"
+      }
+    ]
+  }
+}

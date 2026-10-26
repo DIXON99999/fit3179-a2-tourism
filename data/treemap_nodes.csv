@@ -1,0 +1,86 @@
+id,parent,name,value,state
+0,,Australia,,
+1,0,Australian Capital Territory,,Australian Capital Territory
+2,0,New South Wales,,New South Wales
+3,0,Northern Territory,,Northern Territory
+4,0,Queensland,,Queensland
+5,0,South Australia,,South Australia
+6,0,Tasmania,,Tasmania
+7,0,Victoria,,Victoria
+8,0,Western Australia,,Western Australia
+9,5,Adelaide,7424.2,South Australia
+10,5,Adelaide Hills,319.8,South Australia
+11,3,Alice Springs,362.0,Northern Territory
+12,8,Australia's Coral Coast,887.3,Western Australia
+13,8,Australia's Golden Outback,775.8,Western Australia
+14,8,Australia's North West,1382.1,Western Australia
+15,8,Australia's South West,3329.8,Western Australia
+16,7,Ballarat,993.7,Victoria
+17,3,Barkly,57.8,Northern Territory
+18,5,Barossa,366.3,South Australia
+19,7,Bendigo Loddon,1010.6,Victoria
+20,2,Blue Mountains,1064.6,New South Wales
+21,4,Brisbane,18811.2,Queensland
+22,4,Bundaberg,856.4,Queensland
+23,1,Canberra,3701.2,Australian Capital Territory
+24,2,Capital Country,1500.5,New South Wales
+25,4,Capricorn,926.3,Queensland
+26,2,Central Coast,2169.2,New South Wales
+27,7,Central Highlands,281.4,Victoria
+28,7,Central Murray,730.8,Victoria
+29,2,Central NSW,2496.2,New South Wales
+30,5,Clare Valley,130.3,South Australia
+31,3,Darwin,1421.9,Northern Territory
+32,8,Destination Perth,14710.1,Western Australia
+33,6,East Coast,461.1,Tasmania
+34,5,Eyre Peninsula,537.7,South Australia
+35,5,Fleurieu Peninsula,723.5,South Australia
+36,5,Flinders Ranges and Outback,435.4,South Australia
+37,4,Fraser Coast,920.0,Queensland
+38,7,Geelong and the Bellarine,2145.0,Victoria
+39,7,Gippsland,1049.5,Victoria
+40,4,Gladstone,566.9,Queensland
+41,4,Gold Coast,10326.1,Queensland
+42,7,Goulburn,1264.5,Victoria
+43,7,Great Ocean Road,2121.0,Victoria
+44,7,High Country,1545.7,Victoria
+45,6,Hobart and the South,2712.9,Tasmania
+46,2,Hunter,6280.7,New South Wales
+47,5,Kangaroo Island,146.0,South Australia
+48,3,Katherine Daly,123.2,Northern Territory
+49,7,Lakes,475.4,Victoria
+50,3,Lasseter,423.1,Northern Territory
+51,6,Launceston and the North,1157.3,Tasmania
+52,5,Limestone Coast,594.1,South Australia
+53,3,Litchfield Kakadu Arnhem,191.1,Northern Territory
+54,3,MacDonnell,42.7,Northern Territory
+55,7,Macedon,273.9,Victoria
+56,4,Mackay Isaac,1359.1,Queensland
+57,7,Mallee,754.4,Victoria
+58,7,Melbourne,33445.0,Victoria
+59,7,Murray East,239.3,Victoria
+60,5,"Murray River, Lakes and Coorong",452.0,South Australia
+61,2,New England North West,1297.1,New South Wales
+62,2,North Coast NSW,6485.9,New South Wales
+63,6,North West,984.0,Tasmania
+64,2,Outback NSW,232.1,New South Wales
+65,4,Outback Queensland,465.3,Queensland
+66,7,Peninsula,2266.5,Victoria
+67,7,Phillip Island,840.2,Victoria
+68,4,Queensland Country,2343.2,Queensland
+69,2,Riverina,954.1,New South Wales
+70,5,Riverland,343.8,South Australia
+71,2,Snowy Mountains,733.0,New South Wales
+72,2,South Coast,5013.6,New South Wales
+73,7,Spa Country,248.7,Victoria
+74,4,Sunshine Coast,4973.0,Queensland
+75,2,Sydney,36360.9,New South Wales
+76,2,The Murray,1336.5,New South Wales
+77,4,Townsville,1437.0,Queensland
+78,4,Tropical North Queensland,4736.2,Queensland
+79,6,West Coast,86.7,Tasmania
+80,7,Western Grampians,295.7,Victoria
+81,4,Whitsundays,1280.7,Queensland
+82,7,Wimmera,159.0,Victoria
+83,7,Yarra Valley and Dandenong Ranges,1262.6,Victoria
+84,5,Yorke Peninsula,528.3,South Australia

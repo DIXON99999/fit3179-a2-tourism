@@ -1,0 +1,268 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 600,
+  "height": 460,
+  "title": {
+    "text": "Melbourne and Sydney alone take about a third of tourist spend",
+    "subtitle": "Each circle is one of Australia's 76 tourism regions. Bigger circle, more spend (2024-25).",
+    "anchor": "start",
+    "offset": 12
+  },
+  "projection": {
+    "type": "conicEqualArea",
+    "rotate": [
+      -132,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ],
+    "parallels": [
+      -18,
+      -36
+    ],
+    "scale": 780,
+    "translate": [
+      300,
+      215
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/tourism_regions.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "Tourism_Regions_2021"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e8e8e8",
+        "stroke": "#bbbbbb",
+        "strokeWidth": 0.4
+      }
+    },
+    {
+      "data": {
+        "url": "data/regions_2024_25.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "population_2025": "number",
+            "consumption_m": "number",
+            "gva_direct_m": "number",
+            "gva_total_m": "number",
+            "jobs_direct_thousands": "number",
+            "spend_per_resident": "number",
+            "jobs_per_1000_residents": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "mark": {
+        "type": "circle",
+        "color": "#e34a33",
+        "opacity": 0.6,
+        "stroke": "white",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "consumption_m",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              20,
+              2000
+            ]
+          },
+          "legend": {
+            "title": "Spend ($ million)",
+            "orient": "right",
+            "values": [
+              1000,
+              10000,
+              30000
+            ]
+          }
+        },
+        "order": {
+          "field": "consumption_m",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "consumption_m",
+            "type": "quantitative",
+            "title": "Spend ($m)",
+            "format": "$,.0f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/regions_2024_25.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "population_2025": "number",
+            "consumption_m": "number",
+            "gva_direct_m": "number",
+            "gva_total_m": "number",
+            "jobs_direct_thousands": "number",
+            "spend_per_resident": "number",
+            "jobs_per_1000_residents": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.region == 'Sydney' || datum.region == 'Melbourne'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -50,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/regions_2024_25.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "population_2025": "number",
+            "consumption_m": "number",
+            "gva_direct_m": "number",
+            "gva_total_m": "number",
+            "jobs_direct_thousands": "number",
+            "spend_per_resident": "number",
+            "jobs_per_1000_residents": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.region == 'Brisbane' || datum.region == 'Destination Perth'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -24,
+        "dy": -6,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/regions_2024_25.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "population_2025": "number",
+            "consumption_m": "number",
+            "gva_direct_m": "number",
+            "gva_total_m": "number",
+            "jobs_direct_thousands": "number",
+            "spend_per_resident": "number",
+            "jobs_per_1000_residents": "number",
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.region == 'Gold Coast'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -14,
+        "dy": 16,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "region",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,77 @@
+region,state,population,spend_m,x,y,radius_px
+Adelaide,South Australia,1325333,7424.2,372.4,323.1,18.17
+Adelaide Hills,South Australia,87601,319.8,388.1,340.7,4.67
+Alice Springs,Northern Territory,30875,362.0,322.9,170.2,2.77
+Australia's Coral Coast,Western Australia,77513,887.3,99.5,217.3,4.39
+Australia's Golden Outback,Western Australia,96448,775.8,188.1,238.0,4.9
+Australia's North West,Western Australia,102732,1382.1,194.7,122.9,5.06
+Australia's South West,Western Australia,273443,3329.8,137.1,327.8,8.25
+Ballarat,Victoria,179144,993.7,398.5,353.8,6.68
+Barkly,Northern Territory,6183,57.8,339.2,109.4,1.24
+Barossa,South Australia,47522,366.3,391.5,311.4,3.44
+Bendigo Loddon,Victoria,168963,1010.6,420.5,329.7,6.49
+Blue Mountains,New South Wales,104671,1064.6,473.6,310.7,5.11
+Brisbane,Queensland,2799311,18811.2,542.2,240.5,26.41
+Bundaberg,Queensland,117859,856.4,530.2,210.0,5.42
+Canberra,Australian Capital Territory,484630,3701.2,483.1,361.4,10.99
+Capital Country,New South Wales,202322,1500.5,469.9,331.1,7.1
+Capricorn,Queensland,129462,926.3,506.8,184.6,5.68
+Central Coast,New South Wales,357816,2169.2,553.7,302.4,9.44
+Central Highlands,Victoria,23412,281.4,403.4,343.7,2.42
+Central Murray,Victoria,68912,730.8,445.1,328.9,4.14
+Central NSW,New South Wales,272217,2496.2,477.3,296.8,8.24
+Clare Valley,South Australia,13535,130.3,381.4,304.2,1.84
+Darwin,Northern Territory,159284,1421.9,287.9,17.7,6.3
+Destination Perth,Western Australia,2494246,14710.1,123.9,296.4,24.93
+East Coast,Tasmania,12522,461.1,468.1,427.1,1.77
+Eyre Peninsula,South Australia,59255,537.7,327.4,294.5,3.84
+Fleurieu Peninsula,South Australia,114725,723.5,376.7,347.0,5.35
+Flinders Ranges and Outback,South Australia,54432,435.4,341.2,246.9,3.68
+Fraser Coast,Queensland,122997,920.0,541.8,207.7,5.54
+Geelong and the Bellarine,Victoria,316023,2145.0,401.9,392.1,8.87
+Gippsland,Victoria,219656,1049.5,476.3,384.5,7.4
+Gladstone,Queensland,69046,566.9,536.3,194.5,4.15
+Gold Coast,Queensland,691230,10326.1,571.2,268.3,13.12
+Goulburn,Victoria,139984,1264.5,456.0,330.9,5.91
+Great Ocean Road,Victoria,151783,2121.0,397.6,375.9,6.15
+High Country,Victoria,109322,1545.7,472.9,347.7,5.22
+Hobart and the South,Tasmania,294474,2712.9,452.3,438.1,8.57
+Hunter,New South Wales,728202,6280.7,519.3,274.4,13.47
+Kangaroo Island,South Australia,5212,146.0,357.8,337.4,1.14
+Katherine Daly,Northern Territory,26706,123.2,309.1,60.2,2.58
+Lakes,Victoria,49816,475.4,485.2,376.6,3.52
+Lasseter,Northern Territory,2337,423.1,318.2,188.9,0.76
+Launceston and the North,Tasmania,149174,1157.3,458.6,422.3,6.1
+Limestone Coast,South Australia,69717,594.1,386.7,353.5,4.17
+Litchfield Kakadu Arnhem,Northern Territory,28949,191.1,322.0,20.0,2.69
+MacDonnell,Northern Territory,10222,42.7,307.4,147.0,1.6
+Macedon,Victoria,54479,273.9,412.9,337.9,3.68
+Mackay Isaac,Queensland,152439,1359.1,499.5,160.3,6.16
+Mallee,Victoria,88578,754.4,408.4,329.7,4.7
+Melbourne,Victoria,4662937,33445.0,437.7,367.2,34.08
+Murray East,Victoria,44717,239.3,466.0,341.3,3.34
+"Murray River, Lakes and Coorong",South Australia,39525,452.0,392.3,333.1,3.14
+New England North West,New South Wales,191401,1297.1,499.3,267.7,6.91
+North Coast NSW,New South Wales,660321,6485.9,545.9,280.5,12.83
+North West,Tasmania,115771,984.0,445.3,424.9,5.37
+Outback NSW,New South Wales,37602,232.1,444.4,275.8,3.06
+Outback Queensland,Queensland,76209,465.3,439.5,185.3,4.36
+Peninsula,Victoria,317586,2266.5,439.0,410.8,8.9
+Phillip Island,Victoria,44261,840.2,453.9,401.7,3.32
+Queensland Country,Queensland,410201,2343.2,505.5,233.5,10.11
+Riverina,New South Wales,154334,954.1,458.7,317.9,6.2
+Riverland,South Australia,35437,343.8,394.1,318.8,2.97
+Snowy Mountains,New South Wales,36348,733.0,475.4,373.2,3.01
+South Coast,New South Wales,520761,5013.6,504.2,371.5,11.39
+Spa Country,Victoria,18380,248.7,406.1,348.1,2.14
+Sunshine Coast,Queensland,499913,4973.0,559.3,206.2,11.16
+Sydney,New South Wales,5201875,36360.9,513.2,324.2,36.0
+The Murray,New South Wales,127152,1336.5,427.1,318.2,5.63
+Townsville,Queensland,249097,1437.0,477.0,129.0,7.88
+Tropical North Queensland,Queensland,310626,4736.2,437.2,77.8,8.8
+West Coast,Tasmania,4320,86.7,440.8,430.8,1.04
+Western Grampians,Victoria,36785,295.7,399.8,364.2,3.03
+Whitsundays,Queensland,41374,1280.7,498.4,140.7,3.21
+Wimmera,Victoria,21491,159.0,408.9,343.4,2.31
+Yarra Valley and Dandenong Ranges,Victoria,357630,1262.6,467.4,399.8,9.44
+Yorke Peninsula,South Australia,50371,528.3,356.0,307.6,3.54

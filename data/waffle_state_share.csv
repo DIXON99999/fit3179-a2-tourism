@@ -1,0 +1,101 @@
+n,state,label,col,row
+1,New South Wales,NSW 31%,0,0
+2,New South Wales,NSW 31%,1,0
+3,New South Wales,NSW 31%,2,0
+4,New South Wales,NSW 31%,3,0
+5,New South Wales,NSW 31%,4,0
+6,New South Wales,NSW 31%,5,0
+7,New South Wales,NSW 31%,6,0
+8,New South Wales,NSW 31%,7,0
+9,New South Wales,NSW 31%,8,0
+10,New South Wales,NSW 31%,9,0
+11,New South Wales,NSW 31%,0,1
+12,New South Wales,NSW 31%,1,1
+13,New South Wales,NSW 31%,2,1
+14,New South Wales,NSW 31%,3,1
+15,New South Wales,NSW 31%,4,1
+16,New South Wales,NSW 31%,5,1
+17,New South Wales,NSW 31%,6,1
+18,New South Wales,NSW 31%,7,1
+19,New South Wales,NSW 31%,8,1
+20,New South Wales,NSW 31%,9,1
+21,New South Wales,NSW 31%,0,2
+22,New South Wales,NSW 31%,1,2
+23,New South Wales,NSW 31%,2,2
+24,New South Wales,NSW 31%,3,2
+25,New South Wales,NSW 31%,4,2
+26,New South Wales,NSW 31%,5,2
+27,New South Wales,NSW 31%,6,2
+28,New South Wales,NSW 31%,7,2
+29,New South Wales,NSW 31%,8,2
+30,New South Wales,NSW 31%,9,2
+31,New South Wales,NSW 31%,0,3
+32,Victoria,Vic 24%,1,3
+33,Victoria,Vic 24%,2,3
+34,Victoria,Vic 24%,3,3
+35,Victoria,Vic 24%,4,3
+36,Victoria,Vic 24%,5,3
+37,Victoria,Vic 24%,6,3
+38,Victoria,Vic 24%,7,3
+39,Victoria,Vic 24%,8,3
+40,Victoria,Vic 24%,9,3
+41,Victoria,Vic 24%,0,4
+42,Victoria,Vic 24%,1,4
+43,Victoria,Vic 24%,2,4
+44,Victoria,Vic 24%,3,4
+45,Victoria,Vic 24%,4,4
+46,Victoria,Vic 24%,5,4
+47,Victoria,Vic 24%,6,4
+48,Victoria,Vic 24%,7,4
+49,Victoria,Vic 24%,8,4
+50,Victoria,Vic 24%,9,4
+51,Victoria,Vic 24%,0,5
+52,Victoria,Vic 24%,1,5
+53,Victoria,Vic 24%,2,5
+54,Victoria,Vic 24%,3,5
+55,Victoria,Vic 24%,4,5
+56,Queensland,Qld 23%,5,5
+57,Queensland,Qld 23%,6,5
+58,Queensland,Qld 23%,7,5
+59,Queensland,Qld 23%,8,5
+60,Queensland,Qld 23%,9,5
+61,Queensland,Qld 23%,0,6
+62,Queensland,Qld 23%,1,6
+63,Queensland,Qld 23%,2,6
+64,Queensland,Qld 23%,3,6
+65,Queensland,Qld 23%,4,6
+66,Queensland,Qld 23%,5,6
+67,Queensland,Qld 23%,6,6
+68,Queensland,Qld 23%,7,6
+69,Queensland,Qld 23%,8,6
+70,Queensland,Qld 23%,9,6
+71,Queensland,Qld 23%,0,7
+72,Queensland,Qld 23%,1,7
+73,Queensland,Qld 23%,2,7
+74,Queensland,Qld 23%,3,7
+75,Queensland,Qld 23%,4,7
+76,Queensland,Qld 23%,5,7
+77,Queensland,Qld 23%,6,7
+78,Queensland,Qld 23%,7,7
+79,Western Australia,WA 10%,8,7
+80,Western Australia,WA 10%,9,7
+81,Western Australia,WA 10%,0,8
+82,Western Australia,WA 10%,1,8
+83,Western Australia,WA 10%,2,8
+84,Western Australia,WA 10%,3,8
+85,Western Australia,WA 10%,4,8
+86,Western Australia,WA 10%,5,8
+87,Western Australia,WA 10%,6,8
+88,Western Australia,WA 10%,7,8
+89,South Australia,SA 6%,8,8
+90,South Australia,SA 6%,9,8
+91,South Australia,SA 6%,0,9
+92,South Australia,SA 6%,1,9
+93,South Australia,SA 6%,2,9
+94,South Australia,SA 6%,3,9
+95,Tasmania,Tas 3%,4,9
+96,Tasmania,Tas 3%,5,9
+97,Tasmania,Tas 3%,6,9
+98,Australian Capital Territory,ACT 2%,7,9
+99,Australian Capital Territory,ACT 2%,8,9
+100,Northern Territory,NT 1%,9,9

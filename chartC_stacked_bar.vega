@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "white",
+  "width": 560,
+  "height": 300,
+  "title": {
+    "text": "Overseas visitors make up about a quarter of spend in NSW and Victoria",
+    "subtitle": "Tourist spend by state in 2024-25, split by type of trip ($ billion)",
+    "anchor": "start",
+    "offset": 10
+  },
+  "data": {
+    "url": "data/state_trends_2018_19_to_2024_25.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == '2024-25' && datum.state != 'Australia' && (datum.measure == 'consumption_same_day' || datum.measure == 'consumption_overnight' || datum.measure == 'consumption_international')"
+    },
+    {
+      "calculate": "datum.value / 1000",
+      "as": "billions"
+    },
+    {
+      "calculate": "datum.measure == 'consumption_same_day' ? 'Same-day trips' : datum.measure == 'consumption_overnight' ? 'Overnight (Australians)' : 'International visitors'",
+      "as": "type"
+    },
+    {
+      "calculate": "datum.measure == 'consumption_same_day' ? 1 : datum.measure == 'consumption_overnight' ? 2 : 3",
+      "as": "stack_order"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "stroke": "white",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "sort": {
+        "op": "sum",
+        "field": "billions",
+        "order": "descending"
+      },
+      "title": null
+    },
+    "x": {
+      "field": "billions",
+      "type": "quantitative",
+      "title": "Spend ($ billion)",
+      "axis": {
+        "format": "$,.0f",
+        "tickMinStep": 10
+      }
+    },
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Same-day trips",
+          "Overnight (Australians)",
+          "International visitors"
+        ],
+        "range": [
+          "#c9c9c9",
+          "#8f8f8f",
+          "#e34a33"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "orient": "top"
+      }
+    },
+    "order": {
+      "field": "stack_order",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "state",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "type",
+        "type": "nominal",
+        "title": "Trip type"
+      },
+      {
+        "field": "billions",
+        "type": "quantitative",
+        "title": "Spend ($B)",
+        "format": "$,.1f"
+      }
+    ]
+  }
+}
