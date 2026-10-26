@@ -108,6 +108,19 @@
           "value": "#222"
         }
       }
+    },
+    {
+      "transform": [
+        {
+          "filter": "(datum.region=='Melbourne'||datum.region=='Sydney')&&datum.year=='2020-21'"
+        }
+      ],
+      "mark": {
+        "type": "rect",
+        "fill": null,
+        "stroke": "#c2321f",
+        "strokeWidth": 3
+      }
     }
   ],
   "config": {

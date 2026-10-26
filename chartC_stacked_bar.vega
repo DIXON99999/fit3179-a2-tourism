@@ -4,7 +4,7 @@
   "width": 560,
   "height": 300,
   "title": {
-    "text": "Overseas visitors make up about a quarter of spend in NSW and Victoria",
+    "text": "Overseas visitors make up 22-24% of spend in NSW and Victoria",
     "subtitle": "Tourist spend by state in 2024-25, split by type of trip ($ billion)",
     "anchor": "start",
     "offset": 10
@@ -29,72 +29,136 @@
       "as": "stack_order"
     }
   ],
-  "mark": {
-    "type": "bar",
-    "stroke": "white",
-    "strokeWidth": 1
-  },
-  "encoding": {
-    "y": {
-      "field": "state",
-      "type": "nominal",
-      "sort": {
-        "op": "sum",
-        "field": "billions",
-        "order": "descending"
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "stroke": "white",
+        "strokeWidth": 1
       },
-      "title": null
-    },
-    "x": {
-      "field": "billions",
-      "type": "quantitative",
-      "title": "Spend ($ billion)",
-      "axis": {
-        "format": "$,.0f",
-        "tickMinStep": 10
-      }
-    },
-    "color": {
-      "field": "type",
-      "type": "nominal",
-      "scale": {
-        "domain": [
-          "Same-day trips",
-          "Overnight (Australians)",
-          "International visitors"
-        ],
-        "range": [
-          "#c9c9c9",
-          "#8f8f8f",
-          "#e34a33"
+      "encoding": {
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": [
+            "New South Wales",
+            "Victoria",
+            "Queensland",
+            "Western Australia",
+            "South Australia",
+            "Tasmania",
+            "Australian Capital Territory",
+            "Northern Territory"
+          ],
+          "title": null
+        },
+        "x": {
+          "field": "billions",
+          "type": "quantitative",
+          "title": "Spend ($ billion)",
+          "axis": {
+            "format": "$,.0f",
+            "tickMinStep": 10
+          }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Same-day trips",
+              "Overnight (Australians)",
+              "International visitors"
+            ],
+            "range": [
+              "#c9c9c9",
+              "#8f8f8f",
+              "#6a3d9a"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top"
+          }
+        },
+        "order": {
+          "field": "stack_order",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "type",
+            "type": "nominal",
+            "title": "Trip type"
+          },
+          {
+            "field": "billions",
+            "type": "quantitative",
+            "title": "Spend ($B)",
+            "format": "$,.1f"
+          }
         ]
-      },
-      "legend": {
-        "title": null,
-        "orient": "top"
       }
     },
-    "order": {
-      "field": "stack_order",
-      "type": "quantitative"
-    },
-    "tooltip": [
-      {
-        "field": "state",
-        "type": "nominal",
-        "title": "State"
+    {
+      "transform": [
+        {
+          "joinaggregate": [
+            {
+              "op": "sum",
+              "field": "billions",
+              "as": "tot"
+            }
+          ],
+          "groupby": [
+            "state"
+          ]
+        },
+        {
+          "filter": "datum.type=='International visitors' && datum.tot>15"
+        },
+        {
+          "calculate": "format(datum.billions/datum.tot,'.0%')+' overseas'",
+          "as": "lbl"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#6a3d9a"
       },
-      {
-        "field": "type",
-        "type": "nominal",
-        "title": "Trip type"
-      },
-      {
-        "field": "billions",
-        "type": "quantitative",
-        "title": "Spend ($B)",
-        "format": "$,.1f"
+      "encoding": {
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "sort": [
+            "New South Wales",
+            "Victoria",
+            "Queensland",
+            "Western Australia",
+            "South Australia",
+            "Tasmania",
+            "Australian Capital Territory",
+            "Northern Territory"
+          ]
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "tot",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "lbl"
+        }
       }
-    ]
-  }
+    }
+  ]
 }

@@ -14,47 +14,86 @@
 <style>
   :root {
     --ink: #1f2933;
-    --muted: #5b6770;
-    --accent: #e34a33;
+    --muted: #4d5963;
+    --accent: #c2321f;
     --line: #e4e7ea;
     --paper: #ffffff;
     --tint: #faf7f4;
+    --band-b: #fbefe9;
+    --band-d: #eef4f8;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
     margin: 0; color: var(--ink); background: var(--paper);
     font-family: "Source Sans 3", system-ui, sans-serif;
-    font-size: 18px; line-height: 1.6;
+    font-size: 20px; line-height: 1.55;
   }
   h1, h2 { font-family: "Lora", Georgia, serif; line-height: 1.2; }
-  header.hero { background: var(--tint); border-bottom: 1px solid var(--line); padding: 64px 20px 48px; }
-  .wrap { max-width: 760px; margin: 0 auto; }
-  .wide { max-width: 1000px; margin: 0 auto; }
-  header h1 { font-size: 2.4rem; margin: 0 0 12px; }
-  header .lede { font-size: 1.2rem; color: var(--muted); margin: 0 0 20px; }
-  header .by { font-size: 0.9rem; color: var(--muted); }
-  nav.toc { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 0.95rem; }
+  header.hero { background: var(--tint); border-bottom: 1px solid var(--line); padding: 80px 20px 56px; }
+  .wrap { max-width: 1360px; margin: 0 auto; padding: 0 32px; }
+    header h1 { font-size: 3.4rem; margin: 0 auto 20px; max-width: 1000px; text-align: center; }
+  header .lede { font-size: 1.55rem; color: var(--muted); margin: 0 auto 24px; max-width: 900px; text-align: center; }
+  header .by { font-size: 1.1rem; color: var(--muted); text-align: center; }
+  nav.toc { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: 1.2rem; justify-content: center; }
   nav.toc a { color: var(--accent); text-decoration: none; font-weight: 600; }
   nav.toc a:hover { text-decoration: underline; }
-  section { padding: 56px 20px 24px; border-bottom: 1px solid var(--line); }
-  section h2 { font-size: 1.8rem; margin: 0 0 8px; }
-  section .kicker { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; font-weight: 600; color: var(--accent); margin: 0 0 6px; }
-  p { margin: 0 0 16px; }
-  .note { font-size: 0.9rem; color: var(--muted); border-left: 3px solid var(--line); padding-left: 12px; }
-  figure { margin: 28px 0; }
-  figure .chart { display: flex; overflow-x: auto; }
-  figure .chart.vega-embed { display: flex; }
-  .chart > svg, .chart > canvas { margin: 0 auto; flex: none; }
+  section { padding: 88px 0 16px; }
+  .sec-b { background: var(--band-b); }
+  .sec-d { background: var(--band-d); }
+  section h2 { font-size: 3.2rem; margin: 0; }
+  .sec-head { max-width: 1000px; margin: 0 auto 56px; padding: 0 32px; text-align: center; }
+  section .kicker { text-transform: uppercase; letter-spacing: 0.1em; font-size: 1.05rem; font-weight: 700; color: var(--accent); margin: 0 0 12px; }
+  p { margin: 0 0 18px; }
+  .wrap p { font-size: 1.15rem; }
+  header .wrap p.lede { font-size: 1.6rem; line-height: 1.45; }
+  header .wrap p.by { font-size: 1.15rem; }
+  .row { max-width: 1360px; margin: 0 auto 96px; padding: 0 32px; display: grid; grid-template-columns: 400px minmax(0, 1fr); gap: 56px; align-items: start; }
+  .row .text { position: sticky; top: 32px; }
+  .row .text p { font-size: 1.45rem; line-height: 1.5; }
+  .row figure { margin: 0; min-width: 0; }
+  .row .text { min-width: 0; }
+  .row .text p:first-child { margin-top: 0; }
+  .row figcaption { max-width: none; margin: 14px 0 0; }
+  footer .wrap > * { max-width: 880px; }
+  .takeaway { max-width: 900px; margin: 0 auto 72px; padding: 24px 32px 0; text-align: center; font-family: "Lora", Georgia, serif; font-size: 1.9rem; line-height: 1.4; border-top: 3px solid var(--accent); }
+  .takeaway span { display:block; font-family:"Source Sans 3",sans-serif; font-size:1.05rem; letter-spacing:.1em; text-transform:uppercase; font-weight:700; color:var(--accent); margin-bottom:8px; }
+  figure .chart { border-top: 4px solid var(--accent); }
+  section.closing { padding: 88px 0 72px; background: var(--tint); }
+  strong.key.intl { color: #6a3d9a; }
+  strong.key { color: var(--accent); font-weight: 700; }
+  .note { font-size: 1.15rem; color: var(--muted); border-left: 3px solid var(--accent); padding-left: 14px; }
+  figure { margin: 48px 0 40px; }
+  figure .chart, figure .chart.vega-embed { display: flex; justify-content: center; overflow-x: auto; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 20px; box-shadow: 0 1px 2px rgba(31,41,51,0.05); }
+  .chart > svg, .chart > canvas { margin: 0 auto; flex: none; max-width: none; }
   .chart details, .chart .vega-actions { display: none; }
-  figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
-  footer { background: var(--tint); padding: 40px 20px 60px; font-size: 0.95rem; }
-  footer h2 { font-size: 1.2rem; margin: 24px 0 6px; }
-  footer ul { padding-left: 20px; margin: 0 0 12px; }
-  a { color: #b3321f; }
+  figcaption { max-width: 680px; margin: 14px auto 0; }
+  figcaption p { margin: 0 0 6px; font-size: 1.05rem; color: var(--muted); line-height: 1.45; }
+  figcaption .src { font-size: 1rem; }
+  footer { background: var(--tint); padding: 72px 20px 80px; font-size: 1.05rem; border-top: 1px solid var(--line); }
+  footer h2 { font-size: 1.7rem; margin: 0 0 20px; }
+  footer h3 { font-size: 1.15rem; margin: 28px 0 8px; font-family: "Source Sans 3", system-ui, sans-serif; }
+  footer ul { padding-left: 22px; margin: 0 0 12px; }
+  footer li { margin-bottom: 6px; }
+  table.meta { border-collapse: collapse; width: 100%; margin-bottom: 8px; }
+  table.meta th { text-align: left; width: 28%; padding: 8px 12px 8px 0; vertical-align: top; color: var(--muted); font-weight: 600; }
+  table.meta td { padding: 8px 0; }
+  table.meta tr { border-bottom: 1px solid var(--line); }
+  a { color: #a52a1a; }
+  @media (max-width: 1000px) {
+    .row { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-bottom: 64px; }
+    .row > * { min-width: 0; }
+    .row .text { position: static; max-width: 680px; }
+  }
   @media (max-width: 640px) {
-    body { font-size: 17px; }
-    header h1 { font-size: 1.8rem; }
+    body { font-size: 18px; }
+    header h1 { font-size: 2.2rem; }
+    header .lede { font-size: 1.25rem; }
+    section h2 { font-size: 2.2rem; }
+    .row .text p { font-size: 1.25rem; }
+    section { padding: 56px 0 8px; }
+    .wrap, .row { padding: 0 16px; }
+    figure .chart, figure .chart.vega-embed { padding: 12px; }
   }
 </style>
 </head>
@@ -63,136 +102,246 @@
 <header class="hero">
   <div class="wrap">
     <h1>Where Australia's tourism money lands, and who depends on it</h1>
-    <p class="lede">Australians and visitors spent about $211 billion on tourism in 2024-25. This page follows that money: how much, where it goes, which regions rely on it, and how it has changed since COVID.</p>
+    <p class="lede">Australians and visitors spent about $211 billion on tourism in 2024-25. This page follows that money: where it goes, who relies on it, and how it changed after COVID.</p>
     <p class="by">By Liam Dixon · FIT3179 Data Visualisation 2, Monash University · October 2026</p>
     <nav class="toc" aria-label="Sections">
       <a href="#s1">1. The big picture</a>
       <a href="#s2">2. Where the money goes</a>
       <a href="#s3">3. Per resident</a>
       <a href="#s4">4. Over time</a>
-      <a href="#about">Sources and notes</a>
+      <a href="#about">About this page</a>
     </nav>
   </div>
 </header>
 
-<section id="s1">
-  <div class="wrap">
+<section id="s1" class="sec-a">
+  <div class="sec-head">
     <p class="kicker">1 · The big picture</p>
-    <h2>Three states take almost all of it</h2>
-    <p>Tourism is a big business: roughly 211 billion dollars a year. But it is not shared out evenly. New South Wales, Victoria and Queensland take close to four of every five dollars.</p>
+    <h2>Three states take four of every five dollars</h2>
   </div>
-  <div class="wide">
-    <figure><div id="chartA" class="chart"></div></figure>
+  <div class="row">
+    <div class="text">
+    <p>Australians and visitors spent <strong class="key">$211 billion</strong> on tourism in 2024-25.</p>
+    <p>NSW, Victoria and Queensland took <strong class="key">$166 billion</strong>, or 79%.</p>
+    <p>Tasmania, the NT and the ACT together took just 5.6%.</p>
+    </div>
+    <figure>
+      <div id="chartA" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA state tourism accounts, 2024-25.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wrap">
-    <p>COVID hit this hard. National spend dropped by more than a third by 2020-21, then climbed back above where it started. Because the figures are not adjusted for inflation, part of that recovery is simply higher prices.</p>
+  <div class="row">
+    <div class="text">
+    <p>Spend fell <strong class="key">36%</strong> in two years, from $148 billion to $94 billion.</p>
+    <p>By 2024-25 it was <strong class="key">43% above</strong> 2018-19. Some of that is higher prices, as the figures are not adjusted for inflation.</p>
+    </div>
+    <figure>
+      <div id="chartB" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA state tourism accounts, 2018-19 to 2024-25.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wide">
-    <figure><div id="chartB" class="chart"></div></figure>
+  <div class="row">
+    <div class="text">
+    <p>Overseas visitors are now <strong class="key intl">20%</strong> of spend, down from 25% in 2018-19.</p>
+    <p>The recovery came from Australians. Day-trip spend nearly doubled, from $23 billion to $44 billion.</p>
+    <p>Overseas spend matters most in NSW (24%) and Victoria (22%), least in Tasmania (14%).</p>
+    </div>
+    <figure>
+      <div id="chartC" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA state tourism accounts, 2024-25.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wrap">
-    <p>Not every state relies on the same kind of visitor. In New South Wales and Victoria, about a quarter of spend comes from overseas visitors. Elsewhere, locals travelling within Australia matter far more.</p>
-  </div>
-  <div class="wide">
-    <figure><div id="chartC" class="chart"></div></figure>
-  </div>
+  <p class="takeaway"><span>Takeaway</span>Australia's tourism money is concentrated in three states, and the recovery was led by Australians.</p>
 </section>
 
-<section id="s2">
-  <div class="wrap">
+<section id="s2" class="sec-b">
+  <div class="sec-head">
     <p class="kicker">2 · Where the money goes</p>
-    <h2>It piles up in a handful of places</h2>
-    <p>Zooming in from states to the 76 tourism regions shows how concentrated spending is. On this map each circle is a region, and bigger circles mean more spend. Melbourne and Sydney alone take about a third of the total.</p>
+    <h2>Spend is concentrated, but so are people</h2>
   </div>
-  <div class="wide">
-    <figure><div id="map1" class="chart"></div></figure>
+  <div class="row">
+    <div class="text">
+    <p>Ten of the 76 regions take <strong class="key">68%</strong> of all spend.</p>
+    <p>The 40 smallest regions take just <strong class="key">9%</strong>.</p>
+    </div>
+    <figure>
+      <div id="map1" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA regional tourism accounts, 2024-25; tourism region boundaries.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wrap">
-    <p>The same ranking as a bar chart makes the gap easy to read.</p>
+  <div class="row">
+    <div class="text">
+    <p>Sydney and Melbourne take <strong class="key">33%</strong> between them, about $70 billion.</p>
+    <p>No other region reaches $19 billion.</p>
+    </div>
+    <figure>
+      <div id="chartD" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA regional tourism accounts, 2024-25.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wide">
-    <figure><div id="chartD" class="chart"></div></figure>
+  <div class="row">
+    <div class="text">
+    <p>They also hold <strong class="key">36%</strong> of Australia's people.</p>
+    <p>So their spend is not unusual. Per head, about $7,000, they sit below the national $7,650.</p>
+    </div>
+    <figure>
+      <div id="map2" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA regional tourism accounts, 2024-25; ABS population 2025.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wrap">
-    <p>Spending follows people. On this second map each region is a circle sized by how many people live there, placed as close as possible to its real position, so small regions are no longer hidden by large empty ones. Sydney and Melbourne again stand out.</p>
-    <p class="note">This kind of map is called a Dorling cartogram. It gives up exact geography so that every region can be seen.</p>
+  <div class="row">
+    <div class="text">
+    <p>Perth takes <strong class="key">70%</strong> of Western Australia's tourist spend.</p>
+    <p>Brisbane takes only <strong class="key">38%</strong> of Queensland's. The Gold Coast adds $10 billion, and 11 more regions share the rest.</p>
+    </div>
+    <figure>
+      <div id="chartE" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA regional tourism accounts, 2024-25.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wide">
-    <figure><div id="map2" class="chart"></div></figure>
-  </div>
-  <div class="wrap">
-    <p>Inside each state the pattern differs. Queensland spreads its tourism across many regions. Western Australia keeps about 70% of its tourism spending in Perth.</p>
-  </div>
-  <div class="wide">
-    <figure><div id="chartE" class="chart"></div></figure>
-  </div>
+  <p class="takeaway"><span>Takeaway</span>Money piles up in the big cities, but most big-city regions get less per resident.</p>
 </section>
 
-<section id="s3">
-  <div class="wrap">
+<section id="s3" class="sec-c">
+  <div class="sec-head">
     <p class="kicker">3 · Per resident</p>
-    <h2>The biggest totals are not the biggest dependence</h2>
-    <p>Total spend favours big cities. A fairer question is how much visitors spend for each person who lives there. Dividing spend by population flips the picture: the darkest regions are small, remote or island places.</p>
+    <h2>Small places depend on visitors the most</h2>
   </div>
-  <div class="wide">
-    <figure><div id="map3" class="chart"></div></figure>
+  <div class="row">
+    <div class="text">
+    <p>Per resident, the picture flips. The <strong class="key">23 regions</strong> with under 50,000 people average <strong class="key">$12,900</strong> a head.</p>
+    <p>The 9 regions with over 500,000 people average $7,300.</p>
+    </div>
+    <figure>
+      <div id="map3" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA regional tourism accounts, 2024-25; ABS population 2025; tourism region boundaries.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wrap">
-    <p>Here are the top ten. Lasseter, the region around Uluru, is off the scale at $181,050 per resident, because only about 2,300 people live there. After it come Tasmania's East Coast, the Whitsundays and Kangaroo Island.</p>
+  <div class="row">
+    <div class="text">
+    <p>Lasseter, around Uluru, takes <strong class="key">$181,050</strong> per resident: $423 million spread over 2,337 people.</p>
+    <p>Tasmania's East Coast ($36,820), the Whitsundays ($30,954) and Kangaroo Island ($28,014) follow.</p>
+    <p>The Gold Coast ($14,939) is the only big region in the top ten, at double Brisbane's $6,720.</p>
+    </div>
+    <figure>
+      <div id="chartF" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA regional tourism accounts, 2024-25; ABS population 2025.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wide">
-    <figure><div id="chartF" class="chart"></div></figure>
+  <div class="row">
+    <div class="text">
+    <p>Smaller regions tend to take more per resident. Eight of the nine regions over 500,000 people are under $10,000 a head.</p>
+    <p>The exception is the <strong class="key">Gold Coast</strong>.</p>
+    </div>
+    <figure>
+      <div id="chartG" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA regional tourism accounts, 2024-25; ABS population 2025.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wrap">
-    <p>The pattern holds across all regions. The fewer people live in a region, the more visitors tend to spend per resident. Each step to the right on this chart's horizontal axis is ten times more people.</p>
-  </div>
-  <div class="wide">
-    <figure><div id="chartG" class="chart"></div></figure>
-  </div>
+  <p class="takeaway"><span>Takeaway</span>Per resident, small remote regions depend on visitors the most. Uluru is the extreme.</p>
 </section>
 
-<section id="s4">
-  <div class="wrap">
+<section id="s4" class="sec-d">
+  <div class="sec-head">
     <p class="kicker">4 · Over time</p>
-    <h2>Every state recovered, but not evenly</h2>
-    <p>Comparing 2018-19 with 2024-25, every state now earns more from tourists than before COVID. South Australia, the Northern Territory and Queensland grew the most. The ACT grew the least.</p>
+    <h2>The recovery came from Australians, not overseas visitors</h2>
   </div>
-  <div class="wide">
-    <figure><div id="chartH" class="chart"></div></figure>
+  <div class="row">
+    <div class="text">
+    <p>Every state earns more than in 2018-19. <strong class="key">South Australia grew 55%</strong>, Queensland and the NT 51%.</p>
+    <p>The ACT grew least, at 28%.</p>
+    <p>Overseas visitors are the missing piece. Their spend fell <strong class="key intl">97%</strong> in 2020-21 and is only 14% above 2018-19.</p>
+    </div>
+    <figure>
+      <div id="chartH" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA state tourism accounts, 2018-19 and 2024-25.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wrap">
-    <p>Overseas visitors tell a different story. New South Wales has led international spending every year. Below the top four, states keep swapping places, because their international visitors came back at different speeds.</p>
+  <div class="row">
+    <div class="text">
+    <p>NSW ranks first for overseas spend every year.</p>
+    <p>Queensland (+5%), Tasmania (+6%) and the NT (−6%) have barely recovered. SA (+43%) and WA (+34%) are well ahead.</p>
+    <p>In 2020-21 Queensland passed Victoria, whose total spend fell 52%.</p>
+    </div>
+    <figure>
+      <div id="chartI" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA state tourism accounts, 2018-19 to 2024-25.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wide">
-    <figure><div id="chartI" class="chart"></div></figure>
-  </div>
-  <div class="wrap">
-    <p>Finally, the 20 biggest regions. Each cell shows tourism output compared with 2018-19, which is set to 100. Melbourne and Sydney fell furthest in 2020-21, to 27 and 35, after long lockdowns and closed borders. By 2023-24 both were well above where they began.</p>
+  <div class="row">
+    <div class="text">
+    <p>In 2020-21 the big cities fell furthest: Melbourne to <strong class="key">27</strong>, Sydney to <strong class="key">35</strong>.</p>
+    <p>Holiday and regional areas held up better. North Coast NSW stayed at 88 and Central NSW at 87.</p>
+    <p>By 2023-24 all 20 regions were above their 2018-19 level.</p>
     <p class="note">This heatmap uses the 2023-24 data release only. Output is not adjusted for inflation.</p>
+    </div>
+    <figure>
+      <div id="chartJ" class="chart"></div>
+      <figcaption>
+        <p class="src">Source: TRA regional tourism satellite account, 2023-24 release.</p>
+      </figcaption>
+    </figure>
   </div>
-  <div class="wide">
-    <figure><div id="chartJ" class="chart"></div></figure>
-  </div>
+  <p class="takeaway"><span>Takeaway</span>Every state is ahead of 2018-19, but overseas visitors have not fully returned.</p>
+</section>
+
+<section class="closing">
+  <div class="sec-head"><p class="kicker">So what</p><h2>Concentrated, uneven, and still shifting</h2></div>
+  <div class="row" style="grid-template-columns:minmax(0,1fr);max-width:900px"><div class="text"><p>Tourism money lands in a few big places: Sydney and Melbourne take a third. Per resident it flips, and small regions like Lasseter, the East Coast and the Whitsundays rely on visitors far more. The recovery since COVID came from Australians, so places that lean on overseas visitors still have ground to make up.</p></div></div>
 </section>
 
 <footer id="about">
   <div class="wrap">
-    <h2>Data sources</h2>
+    <h2>About this page</h2>
+    <table class="meta">
+      <tr><th>Author</th><td>Liam Dixon</td></tr>
+      <tr><th>Created</th><td>October 2026</td></tr>
+      <tr><th>Unit</th><td>FIT3179 Data Visualisation, Monash University (Assignment 2)</td></tr>
+      <tr><th>Topic</th><td>Regional tourism in Australia</td></tr>
+    </table>
+
+    <h3>Data sources</h3>
     <ul>
-      <li>Tourism Research Australia (TRA), Regional Tourism Satellite Account 2023-24: regional output (GVA) by year, 2016-17 to 2023-24.</li>
-      <li>TRA, State and regional tourism satellite accounts 2024-25: regional spend, and state series from 2018-19 to 2024-25.</li>
-      <li>Australian Bureau of Statistics: regional population estimates, and the tourism region boundaries used for the maps.</li>
+      <li>Tourism Research Australia (TRA), State and regional tourism satellite accounts 2024-25: regional spend, and state series from 2018-19 to 2024-25.</li>
+      <li>TRA, Regional Tourism Satellite Account 2023-24: regional output (GVA), 2016-17 to 2023-24.</li>
+      <li>Australian Bureau of Statistics (ABS): regional population estimates and tourism region boundaries.</li>
     </ul>
-    <h2>Things to know</h2>
+
+    <h3>Things to know</h3>
     <ul>
-      <li>The 2023-24 and 2024-25 releases use different region lists, so I do not join them into a single series. Region-level time charts use 2023-24 data only.</li>
-      <li>The maps use the 2021 tourism region boundaries, so a few regions may not match the newest TRA boundaries exactly.</li>
+      <li>The 2023-24 and 2024-25 releases use different region lists. I do not join them into one series. Region-level time charts use 2023-24 data only.</li>
+      <li>The maps use 2021 tourism region boundaries. A few regions may not match the newest boundaries exactly.</li>
       <li>Money figures are in current dollars, not adjusted for inflation.</li>
-      <li>"Per resident" means tourist spend divided by the region's resident population. Small regions can look extreme because the divisor is small.</li>
+      <li>"Per resident" means tourist spend divided by resident population. Small regions can look extreme because the divisor is small.</li>
     </ul>
-    <h2>Tools and AI use</h2>
-    <p>Charts are written in Vega-Lite (the treemap in Vega) and embedded with vega-embed. Each chart's specification is in this site's repository. I used Claude (Anthropic) to help find and clean the data, build the chart specifications and draft the page text. I reviewed the work and I am responsible for the final submission.</p>
-    <p>Author: Liam Dixon · Created October 2026</p>
+
+    <h3>Tools and AI use</h3>
+    <p>Charts are written in Vega-Lite (the treemap in Vega) and embedded with vega-embed. Each chart's specification is in this site's repository.</p>
+    <p>I used Claude (Anthropic) to help find and clean the data, build the chart specifications and draft the page text. I reviewed the work and I am responsible for the submission.</p>
   </div>
 </footer>
 
@@ -213,8 +362,32 @@
     chartI: 'chartI_bump.vega',
     chartJ: 'chartJ_heatmap.vega'
   };
+  // Larger chart text, applied to every chart (a spec's own settings still win).
+  const CHART_TEXT = {
+    title: { font: 'Lora, Georgia, serif', fontSize: 19, subtitleFontSize: 14, subtitleColor: '#4d5963', color: '#1f2933' },
+    axis: { labelFontSize: 13, titleFontSize: 14, titleFontWeight: 600 },
+    legend: { labelFontSize: 13, titleFontSize: 14, titleFontWeight: 600 }
+  };
+  // Scale each chart up (or down) so it fills its card. SVG stays sharp and tooltips still work.
+  const K_MAX = 1.6, K_MIN = 0.8;
+  function fit(el) {
+    const svg = el.querySelector('svg');
+    if (!svg) return;
+    if (!svg.dataset.w) {
+      svg.dataset.w = parseFloat(svg.getAttribute('width'));
+      svg.dataset.h = parseFloat(svg.getAttribute('height'));
+      svg.setAttribute('viewBox', '0 0 ' + svg.dataset.w + ' ' + svg.dataset.h);
+    }
+    const cs = getComputedStyle(el);
+    const avail = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const k = Math.max(K_MIN, Math.min(K_MAX, avail / svg.dataset.w));
+    svg.style.width = (svg.dataset.w * k) + 'px';
+    svg.style.height = (svg.dataset.h * k) + 'px';
+  }
+  window.addEventListener('resize', () => document.querySelectorAll('.chart').forEach(fit));
   for (const [id, file] of Object.entries(SPECS)) {
-       vegaEmbed('#' + id, file, { actions: false })
+    vegaEmbed('#' + id, file, { actions: false, config: CHART_TEXT, renderer: 'svg' })
+      .then(() => fit(document.getElementById(id)))
       .catch(err => {
         console.error(id, err);
         document.getElementById(id).innerHTML =

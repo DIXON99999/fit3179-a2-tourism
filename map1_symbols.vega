@@ -191,8 +191,8 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "dx": -24,
-        "dy": -6,
+        "dx": -30,
+        "dy": -8,
         "fontSize": 11,
         "fontWeight": "bold",
         "color": "#333"

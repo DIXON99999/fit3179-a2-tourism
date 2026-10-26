@@ -99,8 +99,9 @@
             ]
           },
           "legend": {
-            "title": "State",
-            "orient": "right"
+            "title": null,
+            "orient": "bottom",
+            "columns": 4
           }
         },
         "tooltip": [
@@ -262,14 +263,14 @@
       "data": {
         "values": [
           {
-            "x": 1500,
+            "x": 9000000,
             "y": 38500
           }
         ]
       },
       "mark": {
         "type": "text",
-        "align": "left",
+        "align": "right",
         "fontSize": 11,
         "color": "#555"
       },

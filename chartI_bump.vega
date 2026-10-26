@@ -102,8 +102,9 @@
         ]
       },
       "legend": {
-        "title": "State",
-        "orient": "right"
+        "title": null,
+        "orient": "bottom",
+        "columns": 4
       }
     }
   },

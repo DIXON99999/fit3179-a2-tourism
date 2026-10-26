@@ -60,13 +60,14 @@
           },
           "legend": {
             "title": "People living there",
-            "orient": "right",
+            "orient": "top-left",
             "values": [
               100000,
               1000000,
               5000000
             ],
-            "format": ",.0f"
+            "format": ",.0f",
+            "direction": "horizontal"
           }
         },
         "color": {
@@ -95,8 +96,9 @@
             ]
           },
           "legend": {
-            "title": "State",
-            "orient": "right"
+            "title": null,
+            "orient": "bottom-left",
+            "columns": 2
           }
         },
         "tooltip": [
@@ -122,7 +124,7 @@
     {
       "transform": [
         {
-          "filter": "datum.region == 'Sydney' || datum.region == 'Melbourne' || datum.region == 'Brisbane'"
+          "filter": "datum.region == 'Sydney' || datum.region == 'Melbourne'"
         }
       ],
       "mark": {
@@ -203,6 +205,48 @@
         },
         "text": {
           "field": "label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.region == 'Brisbane'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#222",
+        "align": "left",
+        "dx": 28
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              80,
+              600
+            ]
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              440
+            ],
+            "reverse": true
+          }
+        },
+        "text": {
+          "field": "region",
           "type": "nominal"
         }
       }

@@ -64,7 +64,8 @@
       "type": "quantitative",
       "title": "Tourist spend ($ million)",
       "axis": {
-        "format": "$,.0f"
+        "format": "$,.0f",
+        "tickCount": 5
       }
     },
     "tooltip": [

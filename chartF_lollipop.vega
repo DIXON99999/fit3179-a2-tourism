@@ -105,8 +105,9 @@
             ]
           },
           "legend": {
-            "title": "State",
-            "orient": "right"
+            "title": null,
+            "orient": "bottom",
+            "columns": 4
           }
         }
       }
@@ -139,7 +140,13 @@
           "title": "Spend per resident ($)",
           "axis": {
             "format": "$,.0f",
-            "tickMinStep": 10000
+            "values": [
+              0,
+              10000,
+              20000,
+              30000,
+              40000
+            ]
           }
         },
         "color": {
@@ -203,8 +210,8 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "dx": -6,
-        "dy": -12,
+        "dx": -4,
+        "dy": 13,
         "fontSize": 11,
         "fontWeight": "bold",
         "color": "#333"
