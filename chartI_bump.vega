@@ -151,6 +151,69 @@
           }
         ]
       }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state=='New South Wales' && datum.year=='2019-20'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -30,
+        "dy": -14,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "text": {
+          "value": "NSW is first every year"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state=='Queensland' && datum.year=='2020-21'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "dy": -14,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "text": {
+          "value": "Qld passes Victoria"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state=='Australian Capital Territory' && datum.year=='2020-21'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "dy": -14,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "text": {
+          "value": "ACT jumps to 5th"
+        }
+      }
     }
   ],
   "config": {

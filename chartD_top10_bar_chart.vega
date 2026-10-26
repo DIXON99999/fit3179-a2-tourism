@@ -45,43 +45,139 @@
       "filter": "datum.rank <= 10"
     }
   ],
-  "mark": {
-    "type": "bar",
-    "color": "#e34a33"
-  },
-  "encoding": {
-    "y": {
-      "field": "region",
-      "type": "nominal",
-      "sort": {
-        "field": "consumption_m",
-        "order": "descending"
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#e34a33"
       },
-      "title": null
-    },
-    "x": {
-      "field": "consumption_m",
-      "type": "quantitative",
-      "title": "Tourist spend ($ million)",
-      "axis": {
-        "format": "$,.0f",
-        "tickCount": 5
+      "encoding": {
+        "y": {
+          "field": "region",
+          "type": "nominal",
+          "sort": [
+            "Sydney",
+            "Melbourne",
+            "Brisbane",
+            "Destination Perth",
+            "Gold Coast",
+            "Adelaide",
+            "North Coast NSW",
+            "Hunter",
+            "South Coast",
+            "Sunshine Coast"
+          ],
+          "title": null
+        },
+        "x": {
+          "field": "consumption_m",
+          "type": "quantitative",
+          "title": "Tourist spend ($ million)",
+          "axis": {
+            "format": "$,.0f",
+            "tickCount": 5
+          }
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "title": "Region"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "consumption_m",
+            "title": "Spend ($ million)",
+            "format": "$,.0f"
+          }
+        ]
       }
     },
-    "tooltip": [
-      {
-        "field": "region",
-        "title": "Region"
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#333"
       },
-      {
-        "field": "state",
-        "title": "State"
-      },
-      {
-        "field": "consumption_m",
-        "title": "Spend ($ million)",
-        "format": "$,.0f"
+      "encoding": {
+        "y": {
+          "field": "region",
+          "type": "nominal",
+          "sort": [
+            "Sydney",
+            "Melbourne",
+            "Brisbane",
+            "Destination Perth",
+            "Gold Coast",
+            "Adelaide",
+            "North Coast NSW",
+            "Hunter",
+            "South Coast",
+            "Sunshine Coast"
+          ],
+          "title": null
+        },
+        "x": {
+          "field": "consumption_m",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "consumption_m",
+          "type": "quantitative",
+          "format": "$,.0f"
+        }
       }
-    ]
-  }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.rank==5"
+        },
+        {
+          "calculate": "'No other region reaches $19B'",
+          "as": "a"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 60,
+        "dy": 0,
+        "fontSize": 13,
+        "fontStyle": "italic",
+        "color": "#555"
+      },
+      "encoding": {
+        "y": {
+          "field": "region",
+          "type": "nominal",
+          "sort": [
+            "Sydney",
+            "Melbourne",
+            "Brisbane",
+            "Destination Perth",
+            "Gold Coast",
+            "Adelaide",
+            "North Coast NSW",
+            "Hunter",
+            "South Coast",
+            "Sunshine Coast"
+          ],
+          "title": null
+        },
+        "x": {
+          "value": 330
+        },
+        "text": {
+          "field": "a"
+        }
+      }
+    }
+  ],
+  "encoding": {}
 }

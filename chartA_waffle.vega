@@ -12,69 +12,140 @@
   "data": {
     "url": "data/waffle_state_share.csv"
   },
-  "mark": {
-    "type": "rect",
-    "stroke": "white",
-    "strokeWidth": 2
-  },
-  "encoding": {
-    "x": {
-      "field": "col",
-      "type": "ordinal",
-      "axis": null
-    },
-    "y": {
-      "field": "row",
-      "type": "ordinal",
-      "sort": "descending",
-      "axis": null
-    },
-    "color": {
-      "field": "label",
-      "type": "nominal",
-      "scale": {
-        "domain": [
-          "NSW 31%",
-          "Vic 24%",
-          "Qld 23%",
-          "WA 10%",
-          "SA 6%",
-          "Tas 3%",
-          "ACT 2%",
-          "NT 1%"
-        ],
-        "range": [
-          "#0072B2",
-          "#D55E00",
-          "#009E73",
-          "#CC79A7",
-          "#E69F00",
-          "#56B4E9",
-          "#7a7a7a",
-          "#a6761d"
-        ]
-      },
-      "legend": {
-        "title": "State and share",
-        "orient": "right"
-      }
-    },
-    "tooltip": [
-      {
-        "field": "state",
-        "type": "nominal",
-        "title": "State"
-      },
-      {
-        "field": "label",
-        "type": "nominal",
-        "title": "Share of national spend"
-      }
-    ]
-  },
   "config": {
     "view": {
       "stroke": null
     }
-  }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "col",
+          "type": "ordinal",
+          "axis": null
+        },
+        "y": {
+          "field": "row",
+          "type": "ordinal",
+          "sort": "descending",
+          "axis": null
+        },
+        "color": {
+          "field": "label",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "NSW 31%",
+              "Vic 24%",
+              "Qld 23%",
+              "WA 10%",
+              "SA 6%",
+              "Tas 3%",
+              "ACT 2%",
+              "NT 1%"
+            ],
+            "range": [
+              "#0072B2",
+              "#D55E00",
+              "#009E73",
+              "#CC79A7",
+              "#E69F00",
+              "#56B4E9",
+              "#7a7a7a",
+              "#a6761d"
+            ]
+          },
+          "legend": {
+            "title": "State and share",
+            "orient": "right"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State"
+          },
+          {
+            "field": "label",
+            "type": "nominal",
+            "title": "Share of national spend"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "calculate": "toNumber(datum.col)",
+          "as": "cn"
+        },
+        {
+          "calculate": "toNumber(datum.row)",
+          "as": "rn"
+        },
+        {
+          "joinaggregate": [
+            {
+              "op": "mean",
+              "field": "cn",
+              "as": "mc"
+            },
+            {
+              "op": "mean",
+              "field": "rn",
+              "as": "mr"
+            }
+          ],
+          "groupby": [
+            "state"
+          ]
+        },
+        {
+          "filter": "datum.state=='New South Wales' || datum.state=='Victoria' || datum.state=='Queensland'"
+        },
+        {
+          "calculate": "datum.state=='New South Wales'?'NSW':datum.state=='Victoria'?'Vic':'Qld'",
+          "as": "ab"
+        },
+        {
+          "calculate": "toString(round(datum.mc))",
+          "as": "cx"
+        },
+        {
+          "calculate": "toString(round(datum.mr))",
+          "as": "ry"
+        },
+        {
+          "filter": "datum.cx==datum.col && datum.ry==datum.row"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "color": "white"
+      },
+      "encoding": {
+        "x": {
+          "field": "col",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "row",
+          "type": "ordinal",
+          "sort": "descending"
+        },
+        "text": {
+          "field": "ab"
+        }
+      }
+    }
+  ]
 }
